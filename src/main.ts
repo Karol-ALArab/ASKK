@@ -1,8 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { App } from './app/app';
 import { provideRouter, Routes } from '@angular/router';
 import { Home } from './app/pages/home/home';
+import { PageNotFound } from './app/pages/page-not-found/page-not-found';
 
 // defining all routes and setting up lazy loading
 const routes: Routes = [
@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'contact', loadComponent: () => import('./app/pages/contact/contact').then((m) => m.Contact) },
   { path: 'projects', loadComponent: () => import('./app/pages/projects/projects').then((m) => m.Projects) },
   { path: 'services', loadComponent: () => import('./app/pages/services/services').then((m) => m.Services) },
-  {path: '**', component: Home}
+  { path: 'projects/:id', loadComponent: () => import('./app/pages/project-detail/project-detail').then((m) => m.ProjectDetail) },
+  {path: '**', component: PageNotFound}
 ];
 
 bootstrapApplication(App, {
