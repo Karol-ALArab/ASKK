@@ -1,0 +1,23 @@
+.project-card {
+  max-width: 600px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.project-header-image {
+  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+h1{
+  text-align: center;
+}
