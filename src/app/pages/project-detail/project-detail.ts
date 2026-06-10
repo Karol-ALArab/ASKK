@@ -3,10 +3,22 @@ import { Project } from '../../data/interface/project';
 import { ProjectService } from '../../data/data-service/project-service';
 import { ActivatedRoute } from '@angular/router';
 import { MatDivider } from '@angular/material/list';
+import { MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardImage, MatCardSubtitle, MatCardTitle } from '@angular/material/card';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [MatDivider],
+  imports: [
+    MatDivider,
+    MatCard,
+    MatCardHeader,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatCardContent,
+    MatCardActions,
+    MatCardImage,
+    NgOptimizedImage,
+  ],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',
 })

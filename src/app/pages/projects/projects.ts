@@ -2,10 +2,29 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../../data/interface/project';
 import { ProjectService } from '../../data/data-service/project-service';
 import { ActivatedRoute, Router } from '@angular/router';
+import {
+  MatCard,
+  MatCardContent,
+  MatCardHeader,
+  MatCardImage,
+  MatCardSubtitle,
+  MatCardTitle,
+} from '@angular/material/card';
+import { MatDivider } from '@angular/material/list';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [
+    MatCard,
+    MatCardContent,
+    MatCardHeader,
+    MatCardImage,
+    MatCardSubtitle,
+    MatCardTitle,
+    MatDivider,
+    NgOptimizedImage
+  ],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
