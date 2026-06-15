@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { MatDivider } from '@angular/material/list';
 import { MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardImage, MatCardSubtitle, MatCardTitle } from '@angular/material/card';
 import { NgOptimizedImage } from '@angular/common';
+import { FadeInDirective } from '../../directives/fade-in';
 
 @Component({
   selector: 'app-project-detail',
@@ -18,6 +19,7 @@ import { NgOptimizedImage } from '@angular/common';
     MatCardActions,
     MatCardImage,
     NgOptimizedImage,
+    FadeInDirective,
   ],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',

@@ -1,5 +1,16 @@
-nav {
+button{
+  padding: 1rem;
+  width: 10rem;
+}
+mat-toolbar{
   display: flex;
+  flex-direction: column;
+  background-color: #3a3a3a;
   gap: 1rem;
+  padding: 2rem;
+  height: 12vh;
+}
+a{
   padding: 1rem;
 }
+

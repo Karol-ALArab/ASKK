@@ -1,7 +1,13 @@
-<nav>
-  <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-  <a routerLink="about" routerLinkActive="active">About Us</a>
-  <a routerLink="services" routerLinkActive="active">Services</a>
-  <a routerLink="projects" routerLinkActive="active">Projects</a>
-  <a routerLink="contact" routerLinkActive="active">Contact</a>
-</nav>
+<mat-card>
+<mat-toolbar>
+  <h1>JM WOODWORKING</h1>
+  <div>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><button matButton="tonal">Home</button></a>
+    <a routerLink="about" routerLinkActive="active"><button matButton="tonal">About</button></a>
+    <a routerLink="services" routerLinkActive="active"><button matButton="tonal">Services</button></a>
+    <a routerLink="projects" routerLinkActive="active"><button matButton="tonal">Projects</button></a>
+    <a routerLink="contact" routerLinkActive="active"><button matButton="tonal">Contact</button></a>
+  </div>
+</mat-toolbar>
+</mat-card>
+
