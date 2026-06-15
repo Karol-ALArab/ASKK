@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatButton } from '@angular/material/button';
+import { MatDivider } from '@angular/material/list';
+import { MatCard } from '@angular/material/card';
 
 @Component({
   selector: 'app-navbar',
-  imports: [
-    RouterLinkActive,
-    RouterLink
-  ],
+  imports: [RouterLinkActive, RouterLink, MatToolbar, MatButton, MatDivider, MatCard],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })

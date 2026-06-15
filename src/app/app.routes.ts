@@ -1,16 +1,28 @@
 
 import { Home } from './pages/home/home';
-import { About} from './pages/about/about';
-import { Services} from './pages/services/services';
-import { Projects} from './pages/projects/projects';
-import { Contact} from './pages/contact/contact';
 import {Routes} from '@angular/router';
+import { PageNotFound } from './pages/page-not-found/page-not-found';
 
 export const routes: Routes = [
-  { path: '', component: Home},
-  { path: 'about', component: About},
-  { path: 'services', component: Services},
-  { path: 'projects', component: Projects},
-  { path: 'contact', component: Contact},
-  { path: '**', redirectTo: '' }
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', component: Home }, // eager load home page
+  { path: 'about', loadComponent: () => import('./pages/about/about').then((m) => m.About) },
+  {
+    path: 'contact',
+    loadComponent: () => import('./pages/contact/contact').then((m) => m.Contact),
+  },
+  {
+    path: 'projects',
+    loadComponent: () => import('./pages/projects/projects').then((m) => m.Projects),
+  },
+  {
+    path: 'services',
+    loadComponent: () => import('./pages/services/services').then((m) => m.Services),
+  },
+  {
+    path: 'projects/:id',
+    loadComponent: () =>
+      import('./pages/project-detail/project-detail').then((m) => m.ProjectDetail),
+  },
+  { path: '**', component: PageNotFound },
 ];

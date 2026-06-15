@@ -12,6 +12,8 @@ import {
 } from '@angular/material/card';
 import { MatDivider } from '@angular/material/list';
 import { NgOptimizedImage } from '@angular/common';
+import { FadeInDirective } from '../../directives/fade-in';
+import { HoverAnim } from '../../directives/hover-anim';
 
 @Component({
   selector: 'app-projects',
@@ -23,45 +25,48 @@ import { NgOptimizedImage } from '@angular/common';
     MatCardSubtitle,
     MatCardTitle,
     MatDivider,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FadeInDirective,
+    HoverAnim,
   ],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
 export class Projects implements OnInit {
-
   // declaring needed vars to access data of projects
-  projectList: Project[] = []               // empty list to fill in with all projects
-  selectedProject: Project | undefined      // storage for the selected item to display alone if clicked
-  currentIndex: number = 0                  // to track index of items in list
+  projectList: Project[] = []; // empty list to fill in with all projects
+  selectedProject: Project | undefined; // storage for the selected item to display alone if clicked
+  currentIndex: number = 0; // to track index of items in list
 
   // DI
-  constructor(private projectService: ProjectService, private router: Router, private route: ActivatedRoute) {
-  }
+  constructor(
+    private projectService: ProjectService,
+    private router: Router,
+    private route: ActivatedRoute,
+  ) {}
 
   // method to deal with when user clicks on a project to view
-  onSelect(id : number):void{
-    this.selectedProject = this.projectList.find(item => item.id === id)
-    this.router.navigate(['/projects', id])
+  onSelect(id: number): void {
+    this.selectedProject = this.projectList.find((item) => item.id === id);
+    this.router.navigate(['/projects', id]);
   }
 
   ngOnInit(): void {
-    this.projectService.getProjectItems().subscribe( {
+    this.projectService.getProjectItems().subscribe({
       next: (data: Project[]) => {
+        this.projectList = data;
 
-        this.projectList = data
+        this.route.paramMap.subscribe((params) => {
+          const id = Number(params.get('id'));
 
-        this.route.paramMap.subscribe(params => {
-          const id = Number(params.get('id'))
-
-          if(id){
-            this.currentIndex = this.projectList.findIndex(item => item.id === id)
-            this.selectedProject = this.projectList[this.currentIndex]
+          if (id) {
+            this.currentIndex = this.projectList.findIndex((item) => item.id === id);
+            this.selectedProject = this.projectList[this.currentIndex];
           }
-        })
+        });
       },
-      error: err => console.error("Error fetching data", err),
-      complete:() => console.log("Project data received successfully")
-    })
+      error: (err) => console.error('Error fetching data', err),
+      complete: () => console.log('Project data received successfully'),
+    });
   }
 }

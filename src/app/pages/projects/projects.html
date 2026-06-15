@@ -1,9 +1,10 @@
-<h1>Projects</h1>
-<mat-divider></mat-divider>
+<section appFadeIn>
+<h1>PROJECTS</h1>
+  <mat-divider></mat-divider>
 
-<div class="container">
-@for (project of projectList; track project;) {
-  <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)">
+  <div class="container" appFadeIn>
+  @for (project of projectList; track project;) {
+  <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
     <mat-card-header>
       <div mat-card-avatar class="project-header-image"></div>
       <mat-card-title>{{project.title}}</mat-card-title>
@@ -16,5 +17,42 @@
       </p>
     </mat-card-content>
   </mat-card>
-}
-</div>
+  }
+  </div>
+
+  <div class="container" appFadeIn>
+  @for (project of projectList; track project;) {
+    <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
+      <mat-card-header>
+        <div mat-card-avatar class="project-header-image"></div>
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-subtitle>{{project.category}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image ngSrc="{{project.imgLink}}" alt="unable to load image" height="500" width="400">
+      <mat-card-content>
+        <p>
+          {{project.desc}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  }
+  </div>
+
+  <div class="container" appFadeIn>
+  @for (project of projectList; track project;) {
+    <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
+      <mat-card-header>
+        <div mat-card-avatar class="project-header-image"></div>
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-subtitle>{{project.category}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image ngSrc="{{project.imgLink}}" alt="unable to load image" height="500" width="400">
+      <mat-card-content>
+        <p>
+          {{project.desc}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  }
+  </div>
+</section>
