@@ -1,5 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'font1';
+  src: url("app/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  /*Fonts*/
+  --font1: 'font1', sans-serif;
+
+  /*Colour variables*/
+  --color-bg: rgb(34, 24, 20);
+  --color-card: rgb(48, 36, 30);
+  --color-accent: rgb(167, 121, 78);
+  --color-accent-light: rgb(205, 170, 125);
+  --color-text: rgb(245, 240, 235);
+  --color-text-muted: rgb(180, 170, 160);
+
+}
+
 h1{
   text-align: center;
+  font-family: font1, sans-serif;
 }
 
