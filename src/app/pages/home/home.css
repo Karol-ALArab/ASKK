@@ -1,3 +1,15 @@
 section {
   font-family: font1, sans-serif;
 }
+
+.banner{
+  height: 100dvh;
+  background-image: url("/app/assets/PhotoshootPics/partOne/PXL_20260712_011825091.jpg");
+
+  background-color: rgba(49, 49, 9, 0.8);
+
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
