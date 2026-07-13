@@ -1,5 +1,28 @@
-nav {
+button{
+  padding: 1rem;
+  width: 10rem;
+
+}
+mat-toolbar{
   display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   gap: 1rem;
+  padding: 2rem;
+  height: 12vh;
+  font-family:'Inter',sans-serif;
+
+}
+mat-toolbar button {
+  background-color: var(--color-card);
+  color: var(--color-accent);
+  font-family:'Inter',sans-serif;
+}
+
+
+
+a {
   padding: 1rem;
 }
+
