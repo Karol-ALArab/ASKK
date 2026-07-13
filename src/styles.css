@@ -1,27 +1,399 @@
-/* You can add global styles to this file, and also import other style files */
-@font-face {
-  font-family: 'font1';
-  src: url("app/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
+
+
+/* ------------------------
+   GLOBAL
+-------------------------*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-:root {
-  /*Fonts*/
-  --font1: 'font1', sans-serif;
+body{
+  background:#1d1b10;
+  color:#efe2c4;
+  font-family:'Inter',sans-serif;
+  line-height:1.7;
+}
 
-  /*Colour variables*/
-  --color-bg: rgb(34, 24, 20);
-  --color-card: rgb(48, 36, 30);
-  --color-accent: rgb(167, 121, 78);
-  --color-accent-light: rgb(205, 170, 125);
-  --color-text: rgb(245, 240, 235);
-  --color-text-muted: rgb(180, 170, 160);
+img{
+  width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+}
+
+ul{
+  list-style:none;
+}
+
+/* ------------------------
+   NAVIGATION
+-------------------------*/
+
+header{
+  border-bottom:1px solid #3a3421;
+  padding:25px 70px;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-weight:700;
+  color:#f1ddb0;
+  font-size:22px;
+}
+
+.nav-links{
+  display:flex;
+  gap:45px;
+}
+
+.nav-links a{
+  color:#bca76a;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:#f3d36f;
+}
+
+.active{
+  color:#e0b840 !important;
+}
+
+/* ------------------------
+   HERO
+-------------------------*/
+
+.hero{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:90px 0;
+}
+
+.section-title{
+  color:#caa53f;
+  letter-spacing:4px;
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-family:"Cormorant Garamond",serif;
+  font-size:72px;
+  margin-bottom:25px;
+  color:#f5e7c8;
+}
+
+.hero-text{
+  max-width:520px;
+  color:#8f8361;
+  font-size:18px;
+}
+
+/* ------------------------
+   SERVICE CARDS
+-------------------------*/
+
+.service-card{
+  width:90%;
+  max-width:1200px;
+  margin:70px auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  background:#262314;
+  border:1px solid #3a3420;
+}
+
+.reverse{
+  grid-template-columns:1fr 1fr;
+}
+
+.service-image img{
+  height:100%;
+  object-fit:cover;
+}
+
+.service-content{
+  padding:60px;
+}
+
+.service-content span{
+  color:#d3ab39;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.service-content h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:52px;
+  line-height:1;
+  margin:20px 0;
+  color:#f3e0b7;
+}
+
+.service-content p{
+  color:#8f8361;
+  margin-bottom:30px;
+}
+
+.service-content ul li{
+
+  margin-bottom:10px;
+  color:#b8aa82;
 
 }
 
-h1{
-  text-align: center;
-  font-family: font1, sans-serif;
+.service-content ul li::before{
+
+  content:"✓";
+  color:#d4aa34;
+  margin-right:10px;
+
 }
 
+.card-footer{
+
+  margin-top:45px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+}
+
+.card-footer h3{
+
+  font-size:24px;
+
+  color:#f3e1bf;
+
+  margin-bottom:5px;
+
+}
+
+.card-footer small{
+
+  color:#8d8262;
+
+}
+
+/* ------------------------
+   BUTTON
+-------------------------*/
+
+.button{
+
+  background:#d8b442;
+
+  color:#18160d;
+
+  padding:15px 35px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  transition:.3s;
+
+}
+
+.button:hover{
+
+  background:#f3cb58;
+
+}
+
+/* ------------------------
+   PROCESS
+-------------------------*/
+
+.process{
+
+  width:90%;
+
+  max-width:1200px;
+
+  margin:130px auto;
+
+}
+
+.process small{
+
+  color:#cda93f;
+
+  letter-spacing:3px;
+
+}
+
+.process h2{
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:60px;
+
+  margin:20px 0 60px;
+
+}
+
+.steps{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:25px;
+
+}
+
+.step{
+
+  border:1px solid #3b3521;
+
+  background:#252213;
+
+  padding:35px;
+
+}
+
+.step h3{
+
+  color:#cba43d;
+
+  font-size:34px;
+
+  margin-bottom:10px;
+
+}
+
+.step h4{
+
+  margin-bottom:15px;
+
+  color:#f0dfbc;
+
+}
+
+.step p{
+
+  color:#8d8262;
+
+}
+
+/* ------------------------
+   CTA
+-------------------------*/
+
+.cta{
+
+  width:90%;
+
+  max-width:1200px;
+
+  margin:120px auto;
+
+  padding:70px 0;
+
+  border-top:1px solid #38311f;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+}
+
+.cta h2{
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:48px;
+
+  margin-bottom:15px;
+
+}
+
+.cta p{
+
+  color:#8d8262;
+
+}
+
+/* ------------------------
+   RESPONSIVE
+-------------------------*/
+
+@media(max-width:900px){
+
+  .service-card{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .reverse{
+
+    display:flex;
+
+    flex-direction:column-reverse;
+
+  }
+
+  .steps{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .cta{
+
+    flex-direction:column;
+
+    gap:40px;
+
+    text-align:center;
+
+  }
+
+  .navbar{
+
+    flex-direction:column;
+
+    gap:25px;
+
+  }
+
+  .hero h1{
+
+    font-size:52px;
+
+  }
+
+  .service-content h2{
+
+    font-size:42px;
+
+  }
+
+  .process h2{
+
+    font-size:48px;
+
+  }
+
+}
