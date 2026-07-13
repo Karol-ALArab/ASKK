@@ -11,13 +11,13 @@ mat-toolbar{
   gap: 1rem;
   padding: 2rem;
   height: 12vh;
-  font-family: font1, sans-serif;
+  font-family:'Inter',sans-serif;
 
 }
 mat-toolbar button {
   background-color: var(--color-card);
-  color: var(--color-text);
-  font-family: font1, sans-serif;
+  color: var(--color-accent);
+  font-family:'Inter',sans-serif;
 }
 
 
