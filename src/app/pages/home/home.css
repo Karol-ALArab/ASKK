@@ -4,11 +4,13 @@ section {
 
 .banner{
   height: 100dvh;
-  background-image: url("/app/assets/PhotoshootPics/partOne/PXL_20260712_011825091.jpg");
 
-  background-color: rgba(49, 49, 9, 0.8);
 
-  background-blend-mode: multiply;
+  /* Stacks a 70% opaque olive green overlay on top of your image */
+  background-image: radial-gradient(circle at center, rgba(29, 27, 16, 0.4) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 70%),
+  url("/app/assets/PhotoshootPics/partOne/PXL_20260712_011552115.jpg");
+
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
