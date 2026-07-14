@@ -48,7 +48,7 @@ ul{
 
 header{
   border-bottom:1px solid #3a3421;
-  padding:25px 70px;
+  padding:25px 70px 0px;
 }
 
 .navbar{
@@ -61,9 +61,9 @@ header{
   font-weight:700;
   color:#f1ddb0;
   font-size:22px;
+  padding: 0 400px 0 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .logo img {
@@ -96,7 +96,7 @@ header{
   width:90%;
   max-width:1200px;
   margin:auto;
-  padding:40px 0;
+  padding:40px 0 0 0;
 }
 
 
