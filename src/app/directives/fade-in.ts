@@ -4,7 +4,7 @@ import {
   DOCUMENT,
   ElementRef,
   HostBinding,
-  Inject,
+  Inject, Input,
   OnDestroy,
 } from '@angular/core';
 
@@ -12,7 +12,9 @@ import {
   selector: '[appFadeIn]',
   standalone: true,
 })
-export class FadeInDirective implements AfterViewInit, OnDestroy{
+export class FadeInDirective implements AfterViewInit, OnDestroy {
+  @Input() appFadeIn = '1.5';
+
   private observer!: IntersectionObserver;
   @HostBinding('attr.animate.enter') enterAnimation = 'fade-in-on-load';
 
@@ -20,7 +22,7 @@ export class FadeInDirective implements AfterViewInit, OnDestroy{
     @Inject(DOCUMENT) private document: Document,
     private el: ElementRef,
   ) {
-    this.addStyles();
+    this.addStyles(this.appFadeIn);
   }
 
   // when element is scrolled into viewport
@@ -45,7 +47,7 @@ export class FadeInDirective implements AfterViewInit, OnDestroy{
     this.observer.observe(target);
   }
 
-  private addStyles() {
+  private addStyles(delay: string) {
     const styleId = 'app-fade-in-directive-styles';
 
     if (!this.document.getElementById(styleId)) {
@@ -57,8 +59,8 @@ export class FadeInDirective implements AfterViewInit, OnDestroy{
         .fade-in-target {
           opacity: 0;
           transform: translateY(80px);
-          transition: opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1),
-                      transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: opacity ${delay}s cubic-bezier(0.16, 1, 0.3, 1),
+                      transform ${delay}s cubic-bezier(0.16, 1, 0.3, 1);
           will-change: opacity, transform;
         }
 

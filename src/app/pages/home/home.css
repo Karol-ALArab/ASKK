@@ -2,21 +2,43 @@ section {
   font-family: font1, sans-serif;
 }
 
-.banner{
+.banner {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Changed to column to stack text over cards */
+  justify-content: space-between; /* Pushes content and cards apart nicely */
   align-items: center;
-  flex-direction: row;
 
-  height: 100dvh;
-  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.93) 0%, rgba(29, 27, 16, 0.98) 50%, rgb(29, 27, 16) 70%),
-  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011552115.jpg");
+  min-height: 120dvh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20dvh; /* Gives the top text some breathing room */
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.87) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 70%),
+  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011547931.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  /* 1. Force the background to stay fixed during scroll */
+  background-attachment: fixed;
+
+  filter: blur(6px);
+  z-index: 1;
 }
 
 .banner-content {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,13 +71,16 @@ section {
 
 }
 
-.featured{
+.featured {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5%;
   padding-bottom: 100px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .featured-card {
@@ -143,16 +168,19 @@ section {
   line-height: 1.4;
   color: #dfcdb4;
 }
-.bio-text p {
-  font-size: 1rem;
+.bio-text p:last-child{
+
   font-weight: 300;
   line-height: 1.6;
-  color: #bbbbbb;
+  color:#8f8361;
+  font-size:18px;
   max-width: 600px;
 }
 .bio-text strong {
-  color: #ffffff;
-  font-weight: 500;
+  font-family:"Cormorant Garamond",serif;
+  font-size: 24px;
+  color:#cba43d;
+  font-weight: 800;
 }
 
 .footer-cards-row {
@@ -234,6 +262,13 @@ section {
 }
 .card-link-text:hover {
   text-decoration: underline;
+}
+
+.section-title{
+  color:#caa53f;
+  letter-spacing:4px;
+  font-size:12px;
+  margin-bottom:20px;
 }
 
 
