@@ -1,58 +1,45 @@
-<section appFadeIn>
-<h1>PROJECTS</h1>
-  <mat-divider></mat-divider>
+<section class="projects-view container" appFadeIn>
 
-  <div class="container" appFadeIn>
-  @for (project of projectList; track project;) {
-  <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
-    <mat-card-header>
-      <div mat-card-avatar class="project-header-image"></div>
-      <mat-card-title>{{project.title}}</mat-card-title>
-      <mat-card-subtitle>{{project.category}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image ngSrc="{{project.imgLink}}" alt="unable to load image" height="500" width="400">
-    <mat-card-content>
-      <p>
-        {{project.desc}}
-      </p>
-    </mat-card-content>
-  </mat-card>
-  }
+  <div class="projects-header">
+    <div class="header-left">
+      <h1>Projects</h1>
+      <div class="filter-bar">
+        <button mat-button class="filter-btn active">ALL</button>
+        <button mat-button class="filter-btn">TABLES</button>
+        <button mat-button class="filter-btn">DESKS</button>
+        <button mat-button class="filter-btn">MUGS</button>
+        <button mat-button class="filter-btn">PENS</button>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <img src="JM_LOGO_ICON.png" alt="JM Woodworking" class="center-logo">
+    </div>
   </div>
 
-  <div class="container" appFadeIn>
-  @for (project of projectList; track project;) {
-    <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
-      <mat-card-header>
-        <div mat-card-avatar class="project-header-image"></div>
-        <mat-card-title>{{project.title}}</mat-card-title>
-        <mat-card-subtitle>{{project.category}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image ngSrc="{{project.imgLink}}" alt="unable to load image" height="500" width="400">
-      <mat-card-content>
-        <p>
-          {{project.desc}}
-        </p>
-      </mat-card-content>
-    </mat-card>
-  }
-  </div>
+  <mat-divider class="dark-divider"></mat-divider>
 
-  <div class="container" appFadeIn>
-  @for (project of projectList; track project;) {
-    <mat-card class="project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
-      <mat-card-header>
-        <div mat-card-avatar class="project-header-image"></div>
-        <mat-card-title>{{project.title}}</mat-card-title>
-        <mat-card-subtitle>{{project.category}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image ngSrc="{{project.imgLink}}" alt="unable to load image" height="500" width="400">
-      <mat-card-content>
-        <p>
-          {{project.desc}}
-        </p>
-      </mat-card-content>
-    </mat-card>
-  }
+  <div class="projects-grid" appFadeIn>
+    @for (project of projectList; track project;) {
+      <mat-card class="glass-project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim>
+
+
+        <div class="card-image-box">
+          <mat-chip class="category-pill">{{project.category}}</mat-chip>
+          <img ngSrc="{{project.imgLink}}" alt="unable to load image" height="300" width="400" class="card-img">
+        </div>
+
+        <div class="card-content-box">
+          <h2 class="project-title">{{project.title}}</h2>
+          <p class="project-desc">{{project.desc}}</p>
+
+          <div class="view-details-btn">
+            <button mat-button>View Details</button>
+          </div>
+        </div>
+
+      </mat-card>
+    }
+
   </div>
 </section>
