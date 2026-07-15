@@ -87,3 +87,40 @@ textarea {
   color: #8a7a5f;
 }
 
+button[type='submit'] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 999px;
+  background: #f0c778;
+  color: #1a1512;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+button[type='submit']:hover:not(:disabled) {
+  background: #f5d491;
+}
+
+button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.status.success {
+  color: #7fbf7f;
+}
+
+.status.error {
+  color: #d9534f;
+}
+
