@@ -96,7 +96,7 @@ header{
   width:90%;
   max-width:1200px;
   margin:auto;
-  padding:90px 0;
+  padding:40px 0;
 }
 
 
@@ -104,13 +104,12 @@ header{
   color:#caa53f;
   letter-spacing:4px;
   font-size:12px;
-  margin-bottom:20px;
+
 }
 
 .hero h1{
   font-family:"Cormorant Garamond",serif;
   font-size:72px;
-  margin-bottom:25px;
   color:#f5e7c8;
 }
 
@@ -186,7 +185,7 @@ header{
 
 .card-footer{
 
-  margin-top:45px;
+
 
   display:flex;
 
@@ -230,6 +229,8 @@ header{
 
   transition:.3s;
 
+  border-radius: 100px;
+
 }
 
 .button:hover{
@@ -237,6 +238,9 @@ header{
   background:#f3cb58;
 
 }
+
+
+
 
 /* ------------------------
    PROCESS
@@ -266,7 +270,7 @@ header{
 
   font-size:60px;
 
-  margin:20px 0 60px;
+
 
 }
 
