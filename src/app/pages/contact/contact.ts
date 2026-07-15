@@ -21,7 +21,7 @@ interface CommissionRequest {
 })
 export class Contact {
   // TODO: ASK JOSH TO SIGN UP FOR FORMSPRFEE
-  private readonly formspreeEndpoint = 'https://formspree.io/f/yourFormId';
+  private readonly formspreeEndpoint = 'https://formspree.io/f/xqeranne';
 
   request: CommissionRequest = {
     name: '',
