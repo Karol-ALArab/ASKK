@@ -14,20 +14,19 @@ import { MatDivider } from '@angular/material/list';
 import { NgOptimizedImage } from '@angular/common';
 import { FadeInDirective } from '../../directives/fade-in';
 import { HoverAnim } from '../../directives/hover-anim';
+import { MatButton } from '@angular/material/button';
+import { MatChip } from '@angular/material/chips';
 
 @Component({
   selector: 'app-projects',
   imports: [
     MatCard,
-    MatCardContent,
-    MatCardHeader,
-    MatCardImage,
-    MatCardSubtitle,
-    MatCardTitle,
     MatDivider,
     NgOptimizedImage,
     FadeInDirective,
     HoverAnim,
+    MatButton,
+    MatChip,
   ],
   templateUrl: './projects.html',
   styleUrl: './projects.css',

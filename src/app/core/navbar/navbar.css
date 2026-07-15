@@ -1,28 +1,52 @@
-button{
-  padding: 1rem;
-  width: 10rem;
 
+.jm-navbar {
+  background: transparent !important;
+  color: #f1f1f1;
+  font-family: font1, sans-serif;
+  height: 80px;
+  padding: 0 40px;
 }
-mat-toolbar{
+
+.nav-brand {
   display: flex;
-  flex-direction: column;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  gap: 1rem;
-  padding: 2rem;
-  height: 12vh;
-  font-family:'Inter',sans-serif;
-
-}
-mat-toolbar button {
-  background-color: var(--color-card);
-  color: var(--color-accent);
-  font-family:'Inter',sans-serif;
+  align-items: center;
 }
 
-
-
-a {
-  padding: 1rem;
+.nav-logo {
+  height: 45px;
+  object-fit: contain;
 }
 
+.nav-est {
+  color: #dfcdb4;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.active-link {
+  color: #dfcdb4;
+}

@@ -1,4 +1,119 @@
-<section appFadeIn>
-  <h1>HOME</h1>
-  <mat-divider></mat-divider>
+<section>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  <section class="banner">
+
+  <div class="banner-content" [appFadeIn]="'10'">
+
+    <div class="logo-wrapper">
+      <img class="logo-img" ngSrc="JM_LOGO_ICON.png" alt="Unable to load logo" fill>
+    </div>
+
+    <h1 class="title">JM WOODWORKING</h1>
+
+    <h1 class="slogan">Crafted With Purpose,<br>Built To Endure</h1>
+
+  </div>
+
+    <section class="featured">
+
+      <mat-card class="featured-card" appHoverAnim [appFadeIn]="'3'">
+
+        <div class="card-image-wrapper">
+          <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_005618618.jpg" alt="Unable to load image">
+
+          <div class="card-label-overlay">
+            Cherry Oak Cigar Box
+          </div>
+        </div>
+
+      </mat-card>
+
+      <mat-card class="featured-card" appHoverAnim [appFadeIn]="'5'">
+
+        <div class="card-image-wrapper">
+          <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_012133566.jpg" alt="Unable to load image">
+
+          <div class="card-label-overlay">
+            Custom set of Coasters
+          </div>
+        </div>
+
+      </mat-card>
+
+      <mat-card class="featured-card" appHoverAnim [appFadeIn]="'7'">
+
+        <div class="card-image-wrapper">
+          <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_012608059.jpg" alt="Unable to load pho">
+
+          <div class="card-label-overlay">
+            Custom Set of Pens
+          </div>
+        </div>
+
+      </mat-card>
+
+    </section>
+</section>
+
+
+  <section class="wood-footer-section">
+
+    <div class="footer-container">
+
+      <div class="bio-row">
+        <div class="bio-heading" appFadeIn>
+          <h2>ELEVATED DESIGN,<br>EXCELLENT<br>CRAFTSMANSHIP</h2>
+        </div>
+
+        <div class="bio-text" appFadeIn>
+          <p class="section-title">
+            HANDCRAFTED WARMTH FOR YOUR HOME
+          </p>
+          <p>Explore a curated collection of custom-built wooden creations—from statement dining tables and floating shelves to artisanal mugs and coasters. Where raw timber meets timeless design.</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="footer-cards-row">
+
+        <mat-card class="footer-card" appHoverAnim appFadeIn>
+          <div class="card-interior-flex">
+            <img class="large-logo" src="JM_LOGO_ICON.png" alt="JM Woodworking">
+            <h3 class="card-top-title">LEARN MORE ABOUT THE CRAFTSMEN </h3>
+
+            <hr class="gold-divider">
+            <a href="#" class="card-link-text">VIEW ABOUT</a>
+          </div>
+        </mat-card>
+
+        <mat-card class="footer-card" appHoverAnim appFadeIn>
+          <div class="card-interior-flex">
+            <div class="img-box">
+              <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_010041044.jpg" alt="Portfolio">
+            </div>
+            <h3 class="card-top-title">EXPLORE PORTFOLIO</h3>
+            <hr class="gold-divider">
+            <a href="#" class="card-link-text">VIEW PROJECTS</a>
+          </div>
+        </mat-card>
+
+        <mat-card class="footer-card" appHoverAnim appFadeIn>
+          <div class="card-interior-flex">
+            <div class="img-box">
+              <img src="/../../assets/PhotoshootPics/partTwo/IMG_20260713_135601282).jpg" alt="Commission">
+            </div>
+            <h3 class="card-top-title tight-margins">COMMISSION YOUR PIECE</h3>
+            <hr class="gold-divider">
+            <a href="#" class="card-link-text">CONTACT INFO FORM LINKS</a>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
 </section>

@@ -37,7 +37,7 @@ export class HoverAnim {
       this.renderer.setStyle(element, 'transition', 'all 0.2s ease-in-out');
 
       // Then set the new styles
-      this.renderer.setStyle(element, 'box-shadow', `2px 1px 5px ${color}, 3px 1px 6px ${color}`);
+
       this.renderer.setStyle(element, 'transform', 'scale(1.02)');
       this.renderer.setStyle(element, 'transform-origin', 'center');
     }
@@ -54,7 +54,7 @@ export class HoverAnim {
       'all 0.3s ease-in-out, transform 0.3s ease-in-out',
     );
 
-    this.renderer.setStyle(element, 'box-shadow', 'none');
+
     this.renderer.setStyle(element, 'text-shadow', 'none');
     this.renderer.setStyle(element, 'transform', 'scale(1)');
   }
