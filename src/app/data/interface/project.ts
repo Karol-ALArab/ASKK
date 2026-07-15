@@ -3,5 +3,9 @@ export interface Project {
   title: string,
   desc: string,
   imgLink: string,
-  category: string
+  category: string,
+  imgLinkList?: string[],
+  processImgLink?: string[],
+  woodType?: string,
+  finishType?: string
 }
