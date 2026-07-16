@@ -12,4 +12,7 @@ import { HoverAnim } from '../../directives/hover-anim';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
-export class Navbar {}
+export class Navbar {
+  // for dropdown toggle in mobile
+  isMenuOpen: boolean = false;
+}

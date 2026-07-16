@@ -1,36 +1,34 @@
-<mat-toolbar class="jm-navbar">
-    <div class="nav-brand">
+<mat-card class="jm-navbar">
+  <div class="nav-brand">
+    <a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">
+      <img src="JM_LOGO_ICON.png" alt="JM Woodworking Logo" class="nav-logo">
+    </a>
+    <span class="nav-est">EST. 2019</span>
+  </div>
 
-      <a  routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">
-        <img src="JM_LOGO_ICON.png" alt="JM Woodworking Logo" class="nav-logo">
-      </a>
+  <!-- Mobile Hamburger Toggle (only visible on mobile) -->
+  <button class="menu-toggle" (click)="isMenuOpen = !isMenuOpen" [class.open]="isMenuOpen" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
 
-      <span class="nav-est">EST. 2019</span>
-    </div>
-
-    <span class="nav-spacer"></span>
-
-  <div class="nav-links">
-
-    <a matButton routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">
+  <!-- Navigation Links (slides in on mobile when isMenuOpen is true) -->
+  <div class="nav-links" [class.active]="isMenuOpen">
+    <a mat-button (click)="isMenuOpen = false" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">
       Home
     </a>
-
-    <a mat-button routerLink="about" routerLinkActive="active-link" class="nav-link">
+    <a mat-button (click)="isMenuOpen = false" routerLink="about" routerLinkActive="active-link" class="nav-link">
       About
     </a>
-
-    <a mat-button routerLink="services" routerLinkActive="active-link" class="nav-link">
+    <a mat-button (click)="isMenuOpen = false" routerLink="services" routerLinkActive="active-link" class="nav-link">
       Services
     </a>
-
-    <a mat-button routerLink="projects" routerLinkActive="active-link" class="nav-link">
+    <a mat-button (click)="isMenuOpen = false" routerLink="projects" routerLinkActive="active-link" class="nav-link">
       Projects
     </a>
-
-    <a mat-button routerLink="contact" routerLinkActive="active-link" class="nav-link">
+    <a mat-button (click)="isMenuOpen = false" routerLink="contact" routerLinkActive="active-link" class="nav-link">
       Contact
     </a>
   </div>
-</mat-toolbar>
-
+</mat-card>

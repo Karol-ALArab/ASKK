@@ -27,6 +27,8 @@ body{
   color:#efe2c4;
   font-family:'Inter',sans-serif;
   line-height:1.7;
+  height: 100%;
+
 }
 
 img{
@@ -46,9 +48,13 @@ ul{
    NAVIGATION
 -------------------------*/
 
-header{
+section.header{
   border-bottom:1px solid #3a3421;
   padding:25px 70px;
+}
+
+header{
+
 }
 
 /*.navbar{*/
@@ -64,6 +70,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 
 .logo img {
