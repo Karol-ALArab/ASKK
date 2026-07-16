@@ -14,8 +14,13 @@
 }
 
 .nav-logo {
-  height: 45px;
+  height: 60px;
   /*object-fit: contain;*/
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-logo:hover{
+  transform: scale(1.1);
 }
 
 .nav-est {
@@ -30,26 +35,19 @@
   flex: 1 1 auto;
 }
 
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  align-items: end;
-}
-
-button {
-  color: #aaaaaa;
-  text-decoration: none;
+.nav-link {
+  color: #aaaaaa !important;
+  font-family: font1, sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 300;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 
+
 .nav-link:hover,
-.active-link {
-  color: #dfcdb4;
+.nav-link.active-link {
+  color: #dfcdb4 !important;
 }
 
 mat-card{
