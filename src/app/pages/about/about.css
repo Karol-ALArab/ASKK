@@ -16,12 +16,15 @@
 }
 /*Main Section*/
 .about-container {
-  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.80) 0%, rgba(29, 27, 16, 0.75) 50%, rgb(29, 27, 16) 80%),
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 80%),
   url('../../assets/PhotoshootPics/partOne/PXL_20260712_012643906.jpg');
+  background-attachment: fixed;
+  position: relative;
   background-size:cover;
   background-position:center;
   padding:70px 8%;
   color:white;
+  height: 100dvh;
 }
 /* Header*/
 .section-header {
@@ -31,11 +34,11 @@
 
 /*Section Heading*/
 .section-title {
-  font-family: 'Cormorant Garamond', serif;
-  color:var(--gold);
+  /*font-family: 'Cormorant Garamond', serif;*/
+  color:#caa53f;
   letter-spacing:4px;
   font-size:25px;
-  font-weight:600;
+  font-weight:300;
 }
 
 /*Main Grid*/
@@ -49,10 +52,10 @@
 /*Material Cards*/
 .about-card,
 .stats-card {
-  background:var(--card);
-  color:white;
+  background-color:#262314;
+  border:1px solid #3a3420;
+  color:#8f8361;
   border-radius:0;
-  border: 1px solid rgba(198,164,108,.30);
   box-shadow: 0 20px 50px rgba(0,0,0,.5);
   padding:40px;
 }
@@ -65,7 +68,7 @@
 /*Main Title*/
 .about-title {
   font-family: 'Cormorant Garamond', serif;
-  color:#DCC39B;
+  color:#f5e7c8;
   font-size:64px;
   line-height:1.05;
   font-weight:600;
@@ -75,7 +78,7 @@
 
 /*Intro Paragraph*/
 .lead-text {
-  color:white;
+  color:#8f8361;
   font-size:18px;
   line-height:1.8;
   margin-bottom:25px;
@@ -83,7 +86,7 @@
 
 /*Description Paragraphs*/
 .description-text {
-  color:var(--muted);
+  color: #8c8375;
   line-height:1.9;
   font-size:16px;
   margin-bottom:18px;

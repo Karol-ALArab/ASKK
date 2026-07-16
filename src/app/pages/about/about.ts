@@ -5,6 +5,7 @@ import {MatToolbar} from '@angular/material/toolbar';
 import {MatCard, MatCardContent, MatCardTitle} from '@angular/material/card';
 import {MatIcon} from '@angular/material/icon';
 import {NgOptimizedImage} from '@angular/common';
+import { HoverAnim } from '../../directives/hover-anim';
 
 @Component({
   selector: 'app-about',
@@ -17,6 +18,7 @@ import {NgOptimizedImage} from '@angular/common';
     MatIcon,
     NgOptimizedImage,
     MatCardTitle,
+    HoverAnim,
   ],
   templateUrl: './about.html',
   styleUrl: './about.css',

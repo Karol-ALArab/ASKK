@@ -37,11 +37,16 @@
 
 .nav-link {
   color: #aaaaaa !important;
-  font-family: font1, sans-serif;
-  font-size: 1rem;
+  /*font-family: font1, sans-serif;*/
+  font-size: 1.1rem;
   letter-spacing: 1px;
   font-weight: 300;
   transition: color 0.3s ease;
+}
+
+.nav-links{
+  display: flex;
+  gap: 1rem;
 }
 
 
