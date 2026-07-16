@@ -28,7 +28,6 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
 
-  /* 1. Force the background to stay fixed during scroll */
   background-attachment: fixed;
 
   filter: blur(6px);

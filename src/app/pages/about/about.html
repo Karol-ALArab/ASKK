@@ -1,4 +1,63 @@
-<section appFadeIn>
-  <h1>ABOUT</h1>
-  <mat-divider></mat-divider>
+
+<section class="about-container">
+  <!-- Section Header -->
+  <div class="section-header">
+
+    <h2 class="section-title">ABOUT THE CRAFTSMAN</h2>
+
+    <mat-divider></mat-divider>
+  </div>
+
+  <!-- Main Content Grid -->
+  <div class="content-grid">
+
+    <!-- Left Card Company Information-->
+    <mat-card class="about-card" appFadeIn appHoverAnim >
+      <mat-card-content>
+
+        <h1 class="about-title">MADE BY JM <br>WOODWORKING</h1>
+
+        <p class="lead-text">
+          JM Woodworking, founded in <strong>2019</strong> by passionate woodworker <strong>Joshua Minnis</strong>,
+          is based in Windsor and specializes in handcrafted custom wooden products.
+        </p>
+
+        <p class="description-text">
+          Every project is built with precision, premium materials, and exceptional craftsmanship. From custom furniture to
+          charcuterie boards and home décor, every piece is designed with attention to detail.
+        </p>
+
+        <p class="description-text">
+          With outstanding customer reviews and years of experience, JM Woodworking continues to create custom pieces that
+          combine functionality with timeless woodworking techniques.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Right Card Logo + Company Statistics-->
+    <mat-card class="stats-card" appFadeIn appHoverAnim>
+      <mat-card-content>
+        <!-- Company Logo -->
+        <div class="logo-container">
+          <img src="JM_LOGO_ICON.png" alt="JM Woodworking Logo" class="company-logo">
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <!-- Statistic One -->
+        <div class="stat-item">
+          <h2>7+</h2>
+          <p>Years of Craftsmanship</p>
+        </div>
+        <mat-divider></mat-divider>
+
+        <!-- Statistic Two -->
+        <div class="stat-item">
+          <h2>100%</h2>
+          <p>Made to Order</p>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
 </section>

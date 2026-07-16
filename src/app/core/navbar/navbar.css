@@ -1,5 +1,6 @@
 
 .jm-navbar {
+
   background: transparent !important;
   color: #f1f1f1;
   font-family: font1, sans-serif;
@@ -13,8 +14,13 @@
 }
 
 .nav-logo {
-  height: 45px;
-  object-fit: contain;
+  height: 60px;
+  /*object-fit: contain;*/
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-logo:hover{
+  transform: scale(1.1);
 }
 
 .nav-est {
@@ -29,24 +35,26 @@
   flex: 1 1 auto;
 }
 
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
 .nav-link {
-  color: #aaaaaa;
-  text-decoration: none;
-  font-size: 1rem;
+  color: #aaaaaa !important;
+  /*font-family: font1, sans-serif;*/
+  font-size: 1.1rem;
   letter-spacing: 1px;
   font-weight: 300;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 
+.nav-links{
+  display: flex;
+  gap: 1rem;
+}
+
+
 .nav-link:hover,
-.active-link {
-  color: #dfcdb4;
+.nav-link.active-link {
+  color: #dfcdb4 !important;
+}
+
+mat-card{
+  width: 90%;
 }

@@ -51,11 +51,11 @@ header{
   padding:25px 70px;
 }
 
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+/*.navbar{*/
+/*  display:flex;*/
+/*  justify-content:space-between;*/
+/*  align-items:center;*/
+/*}*/
 
 .logo{
   font-weight:700;
@@ -70,23 +70,23 @@ header{
   width:100px;
 }
 
-.nav-links{
-  display:flex;
-  gap:45px;
-}
+/*.nav-links{*/
+/*  display:flex;*/
+/*  gap:45px;*/
+/*}*/
 
-.nav-links a{
-  color:#bca76a;
-  transition:.3s;
-}
+/*.nav-links a{*/
+/*  color:#bca76a;*/
+/*  transition:.3s;*/
+/*}*/
 
-.nav-links a:hover{
-  color:#f3d36f;
-}
+/*.nav-links a:hover{*/
+/*  color:#f3d36f;*/
+/*}*/
 
-.active{
-  color:#e0b840 !important;
-}
+/*.active{*/
+/*  color:#e0b840 !important;*/
+/*}*/
 
 /* ------------------------
    HERO
