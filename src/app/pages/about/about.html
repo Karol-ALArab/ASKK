@@ -1,4 +1,43 @@
-<section appFadeIn>
-  <h1>ABOUT</h1>
-  <mat-divider></mat-divider>
+<!--<section appFadeIn>-->
+<!--  <h1>ABOUT</h1>-->
+<!--  <mat-divider></mat-divider>-->
+<!--</section>-->
+
+<section>
+<!--Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--About section-->
+  <section class="about" appFadeIn>
+
+    <p class="section-title">
+      ABOUT THE CRAFTSMAN
+    </p>
+    <mat-divider></mat-divider>
+
+<!--    Card with logo and about text-->
+    <mat-card class="about-card" appHoverAnim [appFadeIn]="'3'">
+      <div class="logo">
+        <img src="JM_LOGO_ICON.png" alt="">
+      </div>
+    </mat-card>
+
+<!--    Card with information about the client and their woodworking business-->
+    <mat-card class="about-card" appHoverAnim [appFadeIn]="'5'">
+      <div class="about-content">
+        <mat-card-title>MADE BY JM WOODWORKING</mat-card-title>
+        <mat-card-content>
+          <p class="highlight-text">
+            JM Woodworking, founded in <strong>2019</strong> by passionate woodworker
+            <strong>Joshua Minnis</strong>, is based in Windsor and is known for custom wooden products.
+          </p>
+          <p class="description-text">
+            The company prides itself on exceptional craftsmanship and personalized service, offering
+            a diverse range of high-quality items. With outstanding reviews, JM Woodworking emphasizes
+            its commitment to artistry and dedication to the community.
+          </p>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </section>
 </section>
