@@ -72,6 +72,7 @@
   margin-bottom:35px;
   text-align:center;
 }
+
 /*Intro Paragraph*/
 .lead-text {
   color:white;
@@ -79,6 +80,7 @@
   line-height:1.8;
   margin-bottom:25px;
 }
+
 /*Description Paragraphs*/
 .description-text {
   color:var(--muted);
@@ -86,12 +88,14 @@
   font-size:16px;
   margin-bottom:18px;
 }
+
 /*Right Card*/
 .stats-card {
   display:flex;
   align-items:center;
   justify-content:center;
 }
+
 /*Logo Wrapper*/
 .logo-container {
   display:flex;
@@ -99,6 +103,7 @@
   align-items:center;
   padding-bottom:10px;
 }
+
 /*Company Logo*/
 .company-logo {
   width:250px;
@@ -109,11 +114,13 @@
 .company-logo:hover {
   transform:scale(1.05);
 }
+
 /*Statistics*/
 .stat-item {
   text-align:center;
   padding:10px 10px;
 }
+
 /*Statistic Numbers*/
 .stat-item h2 {
   font-family: 'Cormorant Garamond', serif;
