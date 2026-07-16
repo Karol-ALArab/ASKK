@@ -4,14 +4,14 @@ section {
 
 .banner {
   display: flex;
-  flex-direction: column; /* Changed to column to stack text over cards */
-  justify-content: space-between; /* Pushes content and cards apart nicely */
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
-  min-height: 120dvh;
+  min-height: 130dvh;
   position: relative;
   overflow: hidden;
-  padding-top: 20dvh; /* Gives the top text some breathing room */
+  padding-top: 20dvh;
 }
 
 .banner::before {
@@ -275,6 +275,10 @@ section {
   .bio-row {
     flex-direction: column;
     gap: 20px;
+  }
+  .featured{
+    margin-top: 100px;
+    flex-direction: column;
   }
   .footer-cards-row {
     grid-template-columns: 1fr;

@@ -1,3 +1,43 @@
-<app-navbar />
-<router-outlet />
+
+<header>
+
+  <!--Nav bar-->
+  <mat-card class="jm-navbar">
+    <div class="nav-brand">
+      <a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">
+        <img src="JM_LOGO_ICON.png" alt="JM Woodworking Logo" class="nav-logo">
+      </a>
+      <span class="nav-est">EST. 2019</span>
+    </div>
+
+    <!-- Hamburger Toggle (only visible on mobile) -->
+    <button class="menu-toggle" (click)="isMenuOpen = !isMenuOpen" [class.open]="isMenuOpen" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Navigation Links (slides in on mobile when isMenuOpen is true) -->
+    <div class="nav-links" [class.active]="isMenuOpen">
+      <a mat-button (click)="isMenuOpen = false" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" fragment="home">
+        Home
+      </a>
+      <a mat-button (click)="isMenuOpen = false" routerLink="/" routerLinkActive="active-link" class="nav-link" fragment="about">
+        About
+      </a>
+      <a mat-button (click)="isMenuOpen = false" routerLink="/" routerLinkActive="active-link" class="nav-link" fragment="services">
+        Services
+      </a>
+      <a mat-button (click)="isMenuOpen = false" routerLink="/" routerLinkActive="active-link" class="nav-link" fragment="projects">
+        Projects
+      </a>
+      <a mat-button (click)="isMenuOpen = false" routerLink="/" routerLinkActive="active-link" class="nav-link" fragment="contact">
+        Contact
+      </a>
+    </div>
+  </mat-card>
+
+</header>
+<router-outlet/>
+
 
