@@ -1,5 +1,6 @@
 
 .jm-navbar {
+
   background: transparent !important;
   color: #f1f1f1;
   font-family: font1, sans-serif;
@@ -14,7 +15,7 @@
 
 .nav-logo {
   height: 45px;
-  object-fit: contain;
+  /*object-fit: contain;*/
 }
 
 .nav-est {
@@ -33,10 +34,10 @@
 .nav-links {
   display: flex;
   gap: 30px;
-  align-items: center;
+  align-items: end;
 }
 
-.nav-link {
+button {
   color: #aaaaaa;
   text-decoration: none;
   font-size: 1rem;
@@ -49,4 +50,8 @@
 .nav-link:hover,
 .active-link {
   color: #dfcdb4;
+}
+
+mat-card{
+  width: 90%;
 }
