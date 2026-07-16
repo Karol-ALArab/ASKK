@@ -6,6 +6,8 @@ import { MatDivider } from '@angular/material/list';
 import { MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardImage, MatCardSubtitle, MatCardTitle } from '@angular/material/card';
 import { NgOptimizedImage } from '@angular/common';
 import { FadeInDirective } from '../../directives/fade-in';
+import { MatButton } from '@angular/material/button';
+import {Location} from '@angular/common';   // for using the back button and saving the users location on the site
 
 @Component({
   selector: 'app-project-detail',
@@ -20,6 +22,7 @@ import { FadeInDirective } from '../../directives/fade-in';
     MatCardImage,
     NgOptimizedImage,
     FadeInDirective,
+    MatButton,
   ],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',
@@ -34,7 +37,13 @@ export class ProjectDetail implements OnInit {
   constructor(
     private projectService: ProjectService,
     private route: ActivatedRoute,
+    private location: Location,
   ) {}
+
+  // go back button using the users location
+  goBack():void{
+    this.location.back();
+  }
 
   ngOnInit(): void {
     this.projectService.getProjectItems().subscribe((items) => {

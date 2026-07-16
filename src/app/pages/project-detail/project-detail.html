@@ -1,7 +1,11 @@
 
   <h1>{{projectItem?.title}}</h1>
   <h2>{{projectItem?.category}}</h2>
-  <img ngSrc="{{projectItem?.imgLink}}" height="600" width="500">
+  <img ngSrc="{{projectItem?.imgLink}}" height="600" width="500" alt="">
   <mat-divider></mat-divider>
   <p>{{projectItem?.desc}}</p>
 
+  <!--Back button-->
+<a mat-button (click)="goBack()">
+  <- Back to projects
+</a>

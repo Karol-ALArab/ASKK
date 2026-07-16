@@ -8,6 +8,13 @@
   box-sizing:border-box;
 }
 
+/**
+For enabling auto scrolling
+ */
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /*Colour variables*/
   --color-bg: #1d1b10;

@@ -5,6 +5,10 @@ import { NgOptimizedImage } from '@angular/common';
 import { MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardSubtitle, MatCardTitle } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
 import { HoverAnim } from '../../directives/hover-anim';
+import { About } from '../about/about';
+import { Contact } from '../contact/contact';
+import { Projects } from '../projects/projects';
+import { Services } from '../services/services';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +24,10 @@ import { HoverAnim } from '../../directives/hover-anim';
     MatCardActions,
     MatButton,
     HoverAnim,
+    About,
+    Contact,
+    Projects,
+    Services,
   ],
   templateUrl: './home.html',
   styleUrl: './home.css',
