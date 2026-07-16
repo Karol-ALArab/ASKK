@@ -1,4 +1,120 @@
-<section appFadeIn>
-  <h1>CONTACT</h1>
-  <mat-divider></mat-divider>
-</section>
+<header>
+
+
+  <div class="logo">
+    <img src="JM_LOGO_ICON.png" alt="">
+
+  </div>
+
+
+</header>
+
+<div class="commission-wrapper" appFadeIn>
+  <div class="commission-card">
+    <h1 class="title">Commission Your Piece</h1>
+    <mat-divider class="title-divider"></mat-divider>
+
+    <form #commissionForm="ngForm" (ngSubmit)="onSubmit(commissionForm)" novalidate>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          [(ngModel)]="request.name"
+          required
+          #nameField="ngModel"
+          [class.invalid]="nameField.invalid && nameField.touched"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          [(ngModel)]="request.email"
+          required
+          email
+          #emailField="ngModel"
+          [class.invalid]="emailField.invalid && emailField.touched"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="(123) 456-7890"
+          [(ngModel)]="request.phone"
+          #phoneField="ngModel"
+          [class.invalid]="phoneField.invalid && phoneField.touched"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="projectType">Project Type</label>
+        <select
+          id="projectType"
+          name="projectType"
+          [(ngModel)]="request.projectType"
+          required
+          #projectTypeField="ngModel"
+          [class.invalid]="projectTypeField.invalid && projectTypeField.touched"
+        >
+          <option value="" disabled selected>Select a project type</option>
+          <option value="deck">Deck</option>
+          <option value="kitchen">Kitchen</option>
+          <option value="bathroom">Bathroom</option>
+          <option value="furniture">Custom Furniture</option>
+          <option value="flooring">Flooring</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">Budget Range</label>
+        <select
+          id="budget"
+          name="budget"
+          [(ngModel)]="request.budget"
+          required
+          #budgetField="ngModel"
+          [class.invalid]="budgetField.invalid && budgetField.touched"
+        >
+          <option value="" disabled selected>Select a budget range</option>
+          <option value="under-1k">Under $1,000</option>
+          <option value="1k-5k">$1,000 - $5,000</option>
+          <option value="5k-15k">$5,000 - $15,000</option>
+          <option value="15k-plus">$15,000+</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="project">Tell us about your project</label>
+        <textarea
+          id="project"
+          name="project"
+          rows="5"
+          placeholder="Tell us about your project"
+          [(ngModel)]="request.project"
+          required
+          #projectField="ngModel"
+          [class.invalid]="projectField.invalid && projectField.touched"
+        ></textarea>
+      </div>
+
+      <button type="submit" appHoverAnim [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Sending…' : 'Send message' }}
+      </button>
+
+      <p class="status success" *ngIf="submitSuccess">
+        Message sent — we'll be in touch soon.
+      </p>
+      <p class="status error" *ngIf="submitError">{{ submitError }}</p>
+    </form>
+  </div>
+</div>
