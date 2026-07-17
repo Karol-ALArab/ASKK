@@ -25,7 +25,7 @@ export class HoverAnim {
   private applyAnim(color: string) {
     const element = this.el.nativeElement;
 
-    this.renderer.setStyle(element, 'z-index', '100');
+    this.renderer.setStyle(element, 'z-index', '50');
 
 
     if (element.tagName === 'P') {

@@ -139,10 +139,7 @@
   letter-spacing:2px;
   font-size:14px;
 }
-/*Material Divider Styling*/
-mat-divider {
-  border-color: rgba(198,164,108,.25);
-}
+
 /*Card Hover Effect*/
 .about-card:hover,
 .stats-card:hover {
@@ -150,6 +147,11 @@ mat-divider {
   transition:.3s ease;
   box-shadow: 0 25px 60px rgba(0,0,0,.6);
 }
+
+mat-divider {
+  border-color: rgba(198,164,108,.25);
+}
+
 
 /*Tablet Layout*/
 @media(max-width:992px){

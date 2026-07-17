@@ -24,43 +24,58 @@
 
       <section class="featured">
 
-        <mat-card class="featured-card" appHoverAnim [appFadeIn]="'3'">
+        <div class="section-header" appFadeIn>
 
-          <div class="card-image-wrapper">
-            <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_005618618.jpg" alt="Unable to load image">
+          <h2 class="section-title">FEATURED WORK</h2>
 
-            <div class="card-label-overlay">
-              Cherry Oak Cigar Box
+          <mat-divider></mat-divider>
+        </div>
+
+
+        <div class="featured">
+
+          <mat-card class="featured-card" appHoverAnim [appFadeIn]="'3'">
+
+            <div class="card-image-wrapper">
+              <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_005618618.jpg" alt="Unable to load image">
+
+              <div class="card-label-overlay">
+                Cherry Oak Cigar Box
+              </div>
             </div>
-          </div>
 
-        </mat-card>
+          </mat-card>
 
-        <mat-card class="featured-card" appHoverAnim [appFadeIn]="'5'">
+          <mat-card class="featured-card" appHoverAnim [appFadeIn]="'5'">
 
-          <div class="card-image-wrapper">
-            <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_012133566.jpg" alt="Unable to load image">
+            <div class="card-image-wrapper">
+              <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_012133566.jpg" alt="Unable to load image">
 
-            <div class="card-label-overlay">
-              Custom set of Coasters
+              <div class="card-label-overlay">
+                Custom set of Coasters
+              </div>
             </div>
-          </div>
 
-        </mat-card>
+          </mat-card>
 
-        <mat-card class="featured-card" appHoverAnim [appFadeIn]="'7'">
+          <mat-card class="featured-card" appHoverAnim [appFadeIn]="'7'">
 
-          <div class="card-image-wrapper">
-            <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_012608059.jpg" alt="Unable to load pho">
+            <div class="card-image-wrapper">
+              <img src="/../../assets/PhotoshootPics/partOne/PXL_20260712_012608059.jpg" alt="Unable to load pho">
 
-            <div class="card-label-overlay">
-              Custom Set of Pens
+              <div class="card-label-overlay">
+                Custom Set of Pens
+              </div>
             </div>
-          </div>
 
-        </mat-card>
+          </mat-card>
+
+        </div>
+
 
       </section>
+
+
     </section>
 
 
@@ -92,7 +107,7 @@
               <h3 class="card-top-title">LEARN MORE ABOUT THE CRAFTSMEN </h3>
 
               <hr class="gold-divider">
-              <a href="#" class="card-link-text">VIEW ABOUT</a>
+              <a mat-button href="#about" class="card-link-text">VIEW ABOUT</a>
             </div>
           </mat-card>
 
@@ -103,7 +118,7 @@
               </div>
               <h3 class="card-top-title">EXPLORE PORTFOLIO</h3>
               <hr class="gold-divider">
-              <a href="#" class="card-link-text">VIEW PROJECTS</a>
+              <a  mat-button href="#projects" class="card-link-text">VIEW PROJECTS</a>
             </div>
           </mat-card>
 
@@ -114,7 +129,7 @@
               </div>
               <h3 class="card-top-title tight-margins">COMMISSION YOUR PIECE</h3>
               <hr class="gold-divider">
-              <a href="#" class="card-link-text">CONTACT INFO FORM LINKS</a>
+              <a  mat-button href="#contact" class="card-link-text">CONTACT INFO FORM LINKS</a>
             </div>
           </mat-card>
         </div>
