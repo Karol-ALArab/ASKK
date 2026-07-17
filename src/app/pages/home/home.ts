@@ -28,6 +28,7 @@ import { Services } from '../services/services';
     Contact,
     Projects,
     Services,
+    Projects,
   ],
   templateUrl: './home.html',
   styleUrl: './home.css',

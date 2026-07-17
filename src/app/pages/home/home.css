@@ -289,11 +289,17 @@ div.featured {
 }
 
 /*Material Divider Styling*/
-mat-divider {
+mat-divider.featured {
   border-color: rgba(198,164,108,.25);
   padding-bottom: 25px;
   width: 300px;
 }
+
+.page-break{
+  border-color: rgba(198,164,108,.25);
+  width: 100%;
+}
+
 
 
 

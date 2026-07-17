@@ -1,65 +1,67 @@
+<section class="projects">
+  <section class="projects-view container" appFadeIn>
 
-<section class="projects-view container" appFadeIn>
-
-  <div class="projects-header">
-    <div class="header-left">
-      <section class="hero">
-        <h1>Projects</h1>
-      </section>
-      <div class="filter-bar">
-        <button mat-button class="filter-btn" [class.active]="activeFilter === 'All'" (click)="setFilter('All')">ALL</button>
-        @for (cat of categories; track cat){
+    <div class="projects-header">
+      <div class="header-left">
+        <section class="hero">
+          <h1>Projects</h1>
+        </section>
+        <div class="filter-bar">
+          <button mat-button class="filter-btn" [class.active]="activeFilter === 'All'" (click)="setFilter('All')">ALL</button>
+          @for (cat of categories; track cat){
             <button mat-button class="filter-btn" [class.active]="activeFilter === cat" (click)="setFilter(cat)">{{cat | uppercase}}</button>
           }
+        </div>
+      </div>
+
+      <div class="header-center">
+        <img src="JM_LOGO_ICON.png" alt="JM Woodworking" class="center-logo">
       </div>
     </div>
 
-    <div class="header-center">
-      <img src="JM_LOGO_ICON.png" alt="JM Woodworking" class="center-logo">
-    </div>
-  </div>
+    <mat-divider></mat-divider>
 
-  <mat-divider></mat-divider>
+    <div class="projects-grid">
+      @for (project of projectList; track project;) {
 
-  <div class="projects-grid">
-    @for (project of projectList; track project;) {
-
-      @if (project.category === activeFilter) {
-        <mat-card class="glass-project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim appFadeIn>
-          <div class="card-image-box">
-            <mat-chip class="category-pill">{{project.category | uppercase}}</mat-chip>
-            <img ngSrc="{{project.imgLink}}" alt="unable to load image" height="300" width="400" class="card-img">
-          </div>
-
-          <div class="card-content-box">
-            <h2 class="project-title">{{project.title}}</h2>
-            <p class="project-desc">{{project.desc}}</p>
-
-            <div class="view-details-btn">
-              <button mat-button>View Details</button>
+        @if (project.category === activeFilter) {
+          <mat-card class="glass-project-card" appearance="outlined" (click)="onSelect(project.id)"  appFadeIn appHoverAnim>
+            <div class="card-image-box">
+              <mat-chip class="category-pill">{{project.category | uppercase}}</mat-chip>
+              <img ngSrc="{{project.imgLink}}" alt="unable to load image" height="300" width="400" class="card-img">
             </div>
-          </div>
-        </mat-card>
-      } @else if (activeFilter === "All") {
-        <mat-card class="glass-project-card" appearance="outlined" (click)="onSelect(project.id)" appHoverAnim appFadeIn>
-          <div class="card-image-box">
-            <mat-chip class="category-pill">{{project.category | uppercase}}</mat-chip>
-            <img ngSrc="{{project.imgLink}}" alt="unable to load image" height="300" width="400" class="card-img">
-          </div>
 
-          <div class="card-content-box">
-            <h2 class="project-title">{{project.title}}</h2>
-            <p class="project-desc">{{project.desc}}</p>
+            <div class="card-content-box">
+              <h2 class="project-title">{{project.title}}</h2>
+              <p class="project-desc">{{project.desc}}</p>
 
-            <div class="view-details-btn">
-              <button mat-button>View Details</button>
+              <div class="view-details-btn">
+                <button mat-button>View Details</button>
+              </div>
             </div>
-          </div>
+          </mat-card>
+        } @else if (activeFilter === "All") {
+          <mat-card class="glass-project-card" appearance="outlined" (click)="onSelect(project.id)"  appFadeIn appHoverAnim>
+            <div class="card-image-box">
+              <mat-chip class="category-pill">{{project.category | uppercase}}</mat-chip>
+              <img ngSrc="{{project.imgLink}}" alt="unable to load image" height="300" width="400" class="card-img">
+            </div>
 
-        </mat-card>
+            <div class="card-content-box">
+              <h2 class="project-title">{{project.title}}</h2>
+              <p class="project-desc">{{project.desc}}</p>
+
+              <div class="view-details-btn">
+                <button mat-button>View Details</button>
+              </div>
+            </div>
+
+          </mat-card>
+        }
+
       }
 
-    }
-
-  </div>
+    </div>
+  </section>
 </section>
+

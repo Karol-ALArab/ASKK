@@ -4,11 +4,6 @@ import { ProjectService } from '../../data/data-service/project-service';
 import { ActivatedRoute, Router } from '@angular/router';
 import {
   MatCard,
-  MatCardContent,
-  MatCardHeader,
-  MatCardImage,
-  MatCardSubtitle,
-  MatCardTitle,
 } from '@angular/material/card';
 import { MatDivider } from '@angular/material/list';
 import { NgOptimizedImage, UpperCasePipe } from '@angular/common';

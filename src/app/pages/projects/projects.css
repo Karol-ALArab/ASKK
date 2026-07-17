@@ -1,3 +1,12 @@
+.projects{
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 20%, rgba(29, 27, 16, 0.95) 45%, rgb(29, 27, 16) 65%),
+  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011815081.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
 
 .projects-view {
   color: #f1f1f1;
@@ -5,6 +14,8 @@
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+
 }
 
 
@@ -74,22 +85,23 @@ mat-divider {
 }
 
 
-.glass-project-card {
-  background:#262314 !important;
-  border:1px solid #3a3420 !important;
+mat-card.glass-project-card {
+  background-color: rgba(38, 35, 20, 0.8) !important;
+  border: 1px solid #3a3420 !important;
   border-radius: 1px !important;
   padding: 0 !important;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
 }
 
-.glass-project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
+
+/*.glass-project-card:hover {*/
+/*  transform: translateY(-5px);*/
+/*  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);*/
+/*}*/
 
 
 .card-image-box {
@@ -132,7 +144,7 @@ mat-chip.category-pill ::ng-deep .mdc-evolution-chip__text-label {
 .project-title {
   margin: 0 0 4px 0;
   font-size: 1.6rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
   font-family: "Cormorant Garamond", serif;
   color: #f5e7c8;
