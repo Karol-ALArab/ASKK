@@ -1,11 +1,36 @@
+<div class="detail-wrapper" appFadeIn>
+  <div class="detail-card">
+    <div class="detail-header">
+      <p class="breadcrumb">PROJECTS / {{projectItem?.category}}</p>
+      <h1>{{projectItem?.title}}</h1>
+    </div>
 
-  <h1>{{projectItem?.title}}</h1>
-  <h2>{{projectItem?.category}}</h2>
-  <img ngSrc="{{projectItem?.imgLink}}" height="600" width="500" alt="">
-  <mat-divider></mat-divider>
-  <p>{{projectItem?.desc}}</p>
+    <div class="detail-body">
+      <div class="gallery">
+        <img ngSrc="{{projectItem?.imgLink}}" height="600" width="500" alt="">
+      </div>
 
-  <!--Back button-->
-<a mat-button (click)="goBack()">
-  <- Back to projects
-</a>
+      <div class="info">
+        <h2>{{projectItem?.title}}</h2>
+        <p class="desc">{{projectItem?.desc}}</p>
+
+        <div class="spec" *ngIf="projectItem?.woodType">
+          <span class="spec-label">Wood Type</span>
+          <span class="spec-value">{{projectItem?.woodType}}</span>
+        </div>
+
+        <div class="spec" *ngIf="projectItem?.finishType">
+          <span class="spec-label">Finish</span>
+          <span class="spec-value">{{projectItem?.finishType}}</span>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <!--Back button-->
+        <a mat-button (click)="goBack()" class="back-btn">
+          ← Back to projects
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

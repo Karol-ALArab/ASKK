@@ -1,7 +1,139 @@
-*{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: font1, sans-serif;
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: repeating-linear-gradient(
+    90deg,
+    #1a1512,
+    #1a1512 2px,
+    #1c1714 2px,
+    #1c1714 4px
+  );
 }
 
+.detail-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.detail-card {
+  width: 100%;
+  max-width: 1000px;
+  background: #141110;
+  border-radius: 16px;
+  border: 1px solid rgba(232, 181, 101, 0.15);
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb {
+  color: #b89968;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 4px;
+}
+
+.detail-header h1 {
+  color: #f0d9a8;
+  font-size: 2rem;
+  margin: 0 0 32px;
+}
+
+.detail-body {
+  display: flex;
+  gap: 40px;
+}
+
+.gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  color: #e8b565;
+  font-size: 1.6rem;
+  margin: 0 0 12px;
+  font-style: italic;
+}
+
+.desc {
+  color: #d8c4a0;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.spec-label {
+  color: #e8b565;
+  font-size: 0.95rem;
+}
+
+.spec-value {
+  color: #d8c4a0;
+  font-size: 0.9rem;
+}
+
+.process h3 {
+  color: #f0d9a8;
+  font-size: 1.1rem;
+  margin: 24px 0 12px;
+}
+
+.process-grid {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.process-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+mat-divider {
+  margin: 24px 0;
+  opacity: 0.2;
+}
+
+.back-btn {
+  color: #e8b565;
+  border: 1px solid #e8b565;
+  border-radius: 999px;
+  padding: 8px 20px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.back-btn:hover {
+  background: #e8b565;
+  color: #1a1512;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+  .detail-body {
+    flex-direction: column;
+  }
+}
