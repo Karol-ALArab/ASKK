@@ -145,7 +145,7 @@ header{
   display:grid;
   grid-template-columns:1fr 1fr;
 
-  background:#262314;
+  background: #262314;
   border:1px solid #3a3420;
 }
 
