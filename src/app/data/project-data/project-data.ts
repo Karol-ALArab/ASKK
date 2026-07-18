@@ -4,8 +4,9 @@ import { Project } from '../interface/project';
 export const projectItems: Project[] = [
   {
     id: 1,
-    title: 'Table',
-    desc: 'This is a table',
+    title: 'Table Base',
+    desc: 'Intersecting white oak table base',
+    longDesc: "This is a table base made from white oak.",
     imgLink: '/../../assets/tables/Resized_tempFileForShare_20221222-100931_468538686716525.jpeg',
     category: 'Tables',
   },
