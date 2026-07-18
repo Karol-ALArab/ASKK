@@ -38,6 +38,10 @@ export class Projects implements OnInit {
   categories = CATEGORY_LIST;
   activeFilter = "All"
 
+  i = 0;
+
+  catAmount = this.categories.length;
+
   // declaring needed vars to access data of projects
   projectList: Project[] = []; // empty list to fill in with all projects
   selectedProject: Project | undefined; // storage for the selected item to display alone if clicked

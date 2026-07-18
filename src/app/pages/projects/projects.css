@@ -144,7 +144,6 @@ mat-chip.category-pill ::ng-deep .mdc-evolution-chip__text-label {
 .project-title {
   margin: 0 0 4px 0;
   font-size: 1.6rem;
-  letter-spacing: 1px;
   font-weight: 600;
   font-family: "Cormorant Garamond", serif;
   color: #f5e7c8;

@@ -9,7 +9,13 @@
         <div class="filter-bar">
           <button mat-button class="filter-btn" [class.active]="activeFilter === 'All'" (click)="setFilter('All')">ALL</button>
           @for (cat of categories; track cat){
-            <button mat-button class="filter-btn" [class.active]="activeFilter === cat" (click)="setFilter(cat)">{{cat | uppercase}}</button>
+            @if ($index == categories.length) {
+              <button mat-button class="filter-btn" [class.active]="activeFilter === cat" (click)="setFilter(cat)">Other</button>
+
+            } @else {
+              <button mat-button class="filter-btn" [class.active]="activeFilter === cat" (click)="setFilter(cat)">{{cat | uppercase}}</button>
+
+            }
           }
         </div>
       </div>
