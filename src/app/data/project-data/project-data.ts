@@ -14,6 +14,9 @@ export const projectItems: Project[] = [
     title: 'Cabinet',
     desc: 'Custom kitchen cabinetry, built in and finished to match the space.',
     imgLink: '/../../assets/cabinets/IMG_6845.JPEG',
+    imgLinkList: [
+     // '/../../assets/mugs/mug.JPG', wont load
+    ],
     category: 'Cabinets',
   },
   {
@@ -21,9 +24,12 @@ export const projectItems: Project[] = [
     title: 'Mug',
     desc: 'Hand crafted oak mugs with a food safe epoxy finish',
     imgLink: '/../../assets/mugs/IMG_2657.JPEG',
+    imgLinkList: [
+      '/../../assets/mugs/IMG_2657.JPEG',
+    //  '/../../assets/mugs/mug.JPG', wont load
+    ],
     category: 'Mugs',
-  }
-
+  },
   //{
 //     id: 4,
 //     title: 'Mug',
