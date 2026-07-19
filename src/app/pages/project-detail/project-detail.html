@@ -14,14 +14,21 @@
         <h2>{{projectItem?.title}}</h2>
         <p class="desc">{{projectItem?.desc}}</p>
 
-        <div class="spec" *ngIf="projectItem?.woodType">
+        <div class="spec">
           <span class="spec-label">Wood Type</span>
           <span class="spec-value">{{projectItem?.woodType}}</span>
         </div>
 
-        <div class="spec" *ngIf="projectItem?.finishType">
+        <div class="spec">
+          <span class="spec-value">{{projectItem?.woodDesc}}</span>
+        </div>
+
+        <div class="spec">
           <span class="spec-label">Finish</span>
           <span class="spec-value">{{projectItem?.finishType}}</span>
+        </div>
+        <div class="spec">
+          <span class="spec-value">{{projectItem?.finishDesc}}</span>
         </div>
 
         <mat-divider></mat-divider>
