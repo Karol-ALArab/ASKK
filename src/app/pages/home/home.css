@@ -302,6 +302,87 @@ mat-divider.featured {
   width: 100%;
 }
 
+.reviews-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.reviews-section-title {
+  /*font-family: "Cormorant Garamond", serif;*/
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #dfcdb4;
+  margin-bottom: 10px;
+}
+
+.reviews-divider {
+  border-color: rgba(198, 164, 108, 0.25);
+  width: 150px;
+}
+
+.reviews-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.review-card {
+  background: #262314;
+  border: 1px solid #3a3420;
+  border-radius: 1px;
+  padding: 30px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.review-interior-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.stars {
+  color: #cba43d;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #dfcdb4;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+.reviewer-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #caa53f;
+  margin: 0 0 5px 0;
+}
+
+.reviewed-product {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #8f8361;
+  text-transform: uppercase;
+}
+
 
 
 
@@ -316,6 +397,10 @@ mat-divider.featured {
     align-items: center;
   }
   .footer-cards-row {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-row {
     grid-template-columns: 1fr;
   }
 }
