@@ -4,49 +4,6 @@
 /* ==================================================
    SERVICES PAGE
 ================================================== */
-  /*.services-page {*/
-
-  /*  min-height:100vh;*/
-
-  /*  background-image:*/
-  /*    radial-gradient(*/
-  /*      closest-corner,*/
-  /*      rgba(29,27,16,0.87) 0%,*/
-  /*      rgba(29,27,16,0.95) 50%,*/
-  /*      rgb(29,27,16) 80%*/
-  /*    ),*/
-  /*    url("../../assets/PhotoshootPics/partOne/PXL_20260712_012643906.jpg");*/
-
-  /*  background-size:cover;*/
-
-  /*  background-position:center;*/
-
-  /*  background-repeat:no-repeat;*/
-
-  /*  background-attachment:fixed;*/
-
-  /*  color:white;*/
-
-  /*}*/
-/*.services-page {*/
-
-/*  min-height:100vh;*/
-
-/*  background-image:*/
-/*    radial-gradient(*/
-/*      closest-corner,*/
-/*      rgba(29,27,16,0.55) 0%,*/
-/*      rgba(29,27,16,0.75) 50%,*/
-/*      rgba(29,27,16,0.90) 80%*/
-/*    ),*/
-/*    url("../../assets/PhotoshootPics/partOne/PXL_20260712_011815081.jpg");*/
-
-/*  background-size:cover;*/
-/*  background-position:center;*/
-/*  background-repeat:no-repeat;*/
-/*  background-attachment:fixed;*/
-
-/*}*/
 .services-page {
   position: relative;
   min-height: 100vh;
@@ -56,27 +13,6 @@
 
 }
 
-/* Background image layer */
-/*.services-page::before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-
-/*  background:*/
-/*    linear-gradient(*/
-/*      to bottom,*/
-/*      rgba(29,27,16,0.75) 0%,*/
-/*      rgba(29,27,16,0.85) 50%,*/
-/*      #1d1b10 100%*/
-/*    ),*/
-/*    url("../../assets/PhotoshootPics/partOne/PXL_20260712_011815081.jpg");*/
-
-/*  background-size: cover;*/
-/*  background-position: center;*/
-/*  background-repeat: no-repeat;*/
-
-/*  z-index: -1;*/
-/*}*/
 .services-page::before {
   content: "";
   position: absolute;
