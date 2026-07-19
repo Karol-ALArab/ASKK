@@ -210,9 +210,9 @@ div.featured {
 }
 
 .footer-card {
-  background: rgba(25, 25, 20, 0.4) !important;
-  border: 1px solid rgba(223, 205, 180, 0.2);
-  border-radius: 12px;
+  background: #262314;
+  border:1px solid #3a3420;
+  border-radius: 1px;
   padding: 24px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
@@ -273,11 +273,15 @@ div.featured {
 }
 
 .card-link-text {
+  background:#d8b442;
+  color:#18160d;
   font-size: 1.1rem;
-  color: #dfcdb4;
+  line-height: 1.75;
+  font-family: font1, sans-serif;
   text-decoration: none;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 15px 35px;
 }
 
 

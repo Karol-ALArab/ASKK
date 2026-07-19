@@ -31,8 +31,7 @@ html {
 
 body{
   background:#1d1b10;
-  /*color:#efe2c4;*/
-  /*background : red;*/
+  color:#efe2c4;
   font-family:'Inter',sans-serif;
   line-height:1.7;
   height: 100%;
@@ -107,48 +106,48 @@ header{
    HERO
 -------------------------*/
 
-/*.hero{*/
-/*  width:90%;*/
-/*  max-width:1200px;*/
-/*  margin:auto;*/
-/*  padding:40px 0;*/
+.hero{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 0;
+}
 
-/*}*/
 
+.section-title{
+  color:#caa53f;
+  letter-spacing:4px;
+  font-size:12px;
 
-/*.section-title{*/
-/*  color:#caa53f;*/
-/*  letter-spacing:4px;*/
-/*  font-size:12px;*/
+}
 
-/*}*/
+.hero h1{
+  font-family:"Cormorant Garamond",serif;
+  font-size:72px;
+  color:#f5e7c8;
+}
 
-/*hero h1{*/
-/*  font-family:"Cormorant Garamond",serif;*/
-/*  font-size:72px;*/
-/*  color:#f5e7c8;*/
-/*}.*/
-
-/*.hero-text{*/
-/*  max-width:520px;*/
-/*  color:#8f8361;*/
-/*  font-size:18px;*/
-/*}*/
+.hero-text{
+  max-width:520px;
+  color:#8f8361;
+  font-size:18px;
+}
 
 /* ------------------------
    SERVICE CARDS
 -------------------------*/
 
-/*.service-card{*/
-/*  width:90%;*/
-/*  max-width:1200px;*/
-/*  margin:70px auto;*/
+.service-card{
+  width:90%;
+  max-width:1200px;
+  margin:70px auto;
 
-/*  display:grid;*/
-/*  grid-template-columns:1fr 1fr;*/
-/*  background:#262314;*/
-/*  border:1px solid #3a3420;*/
-/*}*/
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  background:#262314;
+  border:1px solid #3a3420;
+}
 
 .reverse{
   grid-template-columns:1fr 1fr;
