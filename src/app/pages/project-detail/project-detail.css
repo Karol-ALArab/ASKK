@@ -207,28 +207,26 @@ mat-divider {
 
 
 /* BUTTON */
-
 .back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  display:inline-block;
+  width: 220px;
+  height: 60px;
 
-  color:#caa53f;
+  color: #caa53f;
+  border: 1px solid #caa53f;
+  border-radius: 999px;
+  text-decoration: none;
 
-  border:1px solid #caa53f;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
-  border-radius:100px;
-
-  padding:14px 35px;
-
-  font-family:"Inter",sans-serif;
-
-  letter-spacing:2px;
-
-  text-transform:uppercase;
-
-  transition:.3s;
-
+  box-sizing: border-box;
 }
+
 
 
 .back-btn:hover {
