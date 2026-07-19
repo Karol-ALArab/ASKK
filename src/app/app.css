@@ -128,3 +128,24 @@ NAV BAR STYLING
     font-size: 1.3rem;
   }
 }
+/*Footer Style */
+.footer {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #1b180f;
+}
+
+
+.footer-bottom {
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #b38b3d;
+  font-size: 14px;
+}
+
