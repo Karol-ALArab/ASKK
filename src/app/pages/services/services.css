@@ -1,0 +1,57 @@
+body{
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 20%, rgba(29, 27, 16, 0.95) 45%, rgb(29, 27, 16) 65%),
+  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011815081.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+/* ------------------------
+   HERO
+-------------------------*/
+.hero{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 0;
+
+}
+.hero h1{
+  font-family:"Cormorant Garamond",serif;
+  font-size:72px;
+  color:#f5e7c8;
+
+}
+h2{
+  color: #efe2c4;
+  font-family:"Cormorant Garamond",serif;
+  font-size:52px;
+
+}
+.hero-text{
+  max-width:520px;
+  color:#8f8361;
+  font-size:18px;
+}
+
+
+/* ------------------------
+   SERVICE CARDS
+-------------------------*/
+
+.service-card{
+  width:90%;
+  max-width:1200px;
+  margin:70px auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:#262314;
+  border:1px solid #3a3420;
+}
+.section-title {
+  color: #caa53f;
+  letter-spacing: 4px;
+  font-size: 12px;
+}

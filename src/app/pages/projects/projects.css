@@ -17,7 +17,7 @@
 
 
 }
-
+/*Header Section*/
 
 .projects-header {
   display: flex;
@@ -28,13 +28,13 @@
 
 
 
-/*.projects-header h1 {*/
-/*  font-family:"Cormorant Garamond",serif;*/
-/*  font-size:72px;*/
-/*  margin-bottom:25px;*/
-/*  color:#f5e7c8;*/
-/*  font-weight: 300;*/
-/*}*/
+.projects-header h1 {
+  font-family:"Cormorant Garamond",serif;
+  font-size:72px;
+  margin-bottom:25px;
+  color:#f5e7c8;
+  font-weight: 300;
+}
 
 .filter-bar {
   display: flex;
