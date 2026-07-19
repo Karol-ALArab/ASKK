@@ -16,7 +16,8 @@
 }
 /*Main Section*/
 .about-container {
-  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 80%),
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 0%,
+          rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 80%),
   url('../../assets/PhotoshootPics/partOne/PXL_20260712_012643906.jpg');
   background-attachment: fixed;
   position: relative;
