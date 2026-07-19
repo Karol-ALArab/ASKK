@@ -498,12 +498,13 @@ export const projectItems: Project[] = [
     desc: 'Custom Made Inlaied Rings',
     woodType: 'Not Limited to. Inquire for more information.',
     finishType: 'Cyanoacrylate (CA) Finish',
-    finishDesc: 'Applied to wood surfaces in multiple polished layers\n'+
-      'to create a durable, crystal-clear, high-gloss protective\n'+
-      'coating. Enhances the natural grain and color while\n'+
-      'providing exceptional resistance to moisture,\n'+
+    finishDesc:
+      'Applied to wood surfaces in multiple polished layers\n' +
+      'to create a durable, crystal-clear, high-gloss protective\n' +
+      'coating. Enhances the natural grain and color while\n' +
+      'providing exceptional resistance to moisture,\n' +
       'scratches, oils, and everyday handling.',
-    imgLink: '/../../assets/PhotoshootPics/partTwo/IMG_20260713_135550_(4).jpg',
+    imgLink: '/../../assets/PhotoshootPics/partTwo/IMG_20260713_135549_(1).jpg',
     category: 'Other',
   },
 ];
