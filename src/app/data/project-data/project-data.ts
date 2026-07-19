@@ -20,7 +20,7 @@ export const projectItems: Project[] = [
     category: 'Tables',
   },
   {
-    id: 3,
+    id: 2,
     title: 'Custom Set of Wooden Tankards',
     desc: 'Set of Medieval Inspired Tankards with custom handles',
     woodType: 'Juglans regia (English Walnut)',
@@ -42,7 +42,7 @@ export const projectItems: Project[] = [
     category: 'Mugs',
   },
   {
-    id: 5,
+    id: 3,
     title: 'Mappa Burl Coasters',
     desc: 'Highly figured decorative wood coasters',
     woodType: 'Black Poplar',
@@ -60,7 +60,7 @@ export const projectItems: Project[] = [
     category: 'Coasters',
   },
   {
-    id: 6,
+    id: 4,
     title: 'Spalted Maple Coasters',
     desc: 'Highly figured decorative wood coasters',
     woodType: 'Acer saccharum (Spalted Maple)',
@@ -77,7 +77,7 @@ export const projectItems: Project[] = [
     category: 'Coasters',
   },
   {
-    id: 7,
+    id: 5,
     title: 'Wenge w/ Inlay Coasters',
     desc: 'Highly figured decorative wood coasters',
     woodType: 'Millettia laurentii (Wenge)',
@@ -94,7 +94,7 @@ export const projectItems: Project[] = [
     category: 'Coasters',
   },
   {
-    id: 8,
+    id: 6,
     title: 'Design-Build Decks',
     desc: 'Custom Designed deck built to owner’s request',
     woodType: 'Pressure-Treated Deck Lumber',
@@ -113,7 +113,7 @@ export const projectItems: Project[] = [
     category: 'Decks',
   },
   {
-    id: 9,
+    id: 7,
     title: 'Red Oak Shelves',
     desc: 'Floating, Hidden Hardware, Shelves',
     woodType: 'Quercus rubra (Red Oak)',
@@ -130,7 +130,7 @@ export const projectItems: Project[] = [
     category: 'Shelves',
   },
   {
-    id: 10,
+    id: 8,
     title: 'Custom Dining Table ',
     desc: 'Maple Dining Room Table w/ select spalting',
     woodType: 'Acer saccharum (Maple)',
@@ -147,7 +147,7 @@ export const projectItems: Project[] = [
     category: 'Tables',
   },
   {
-    id: 16,
+    id: 9,
     title: 'Custom Fireplace Mantle',
     desc: 'Stained-Poplar Fireplace Mantle',
     finishType: 'General Finishes Oil Stain w/ Protective Hard-wax-formula',
@@ -168,7 +168,7 @@ export const projectItems: Project[] = [
     category: 'Shelves',
   },
   {
-    id: 11,
+    id: 10,
     title: 'Bubinga-Burl Cigar Carry Case',
     desc: 'Accessory carry case to “Bubinga-Burl Cigar Box”',
     woodType:
@@ -196,7 +196,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 12,
+    id: 11,
     title: 'Luxury Cigar Box',
     desc: 'Bubinga-Burl Cigar Box',
     woodType:
@@ -224,7 +224,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 13,
+    id: 12,
     title: 'Pen Sets',
     desc: 'Custom Made Pen Sets or Individual Pieces',
     woodType: 'Not Limited to a select few.',
@@ -239,7 +239,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 14,
+    id: 13,
     title: 'Material Study',
     desc: 'Glass Vase Material Study',
     woodType: 'Silica Glass (Stained Glass)',
@@ -255,7 +255,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 15,
+    id: 14,
     title: 'Custom Residential Stairs',
     desc: 'Stained Oak Stair Threads &amp; Stringer Caps',
     woodType: 'Quercus rubra (Stained-Red Oak)',
@@ -277,7 +277,7 @@ export const projectItems: Project[] = [
   },
 
   {
-    id: 16,
+    id: 15,
     title: 'Design-Build End Table',
     desc: 'Custom Designed Accessory Table built to owner’s request',
     woodType: 'Acer saccharum (Spalted-Maple)',
@@ -315,7 +315,7 @@ export const projectItems: Project[] = [
     category: 'Shelves',
   },
   {
-    id: 16,
+    id: 17,
     title: 'Built-In Bar Cabinet',
     desc: 'Custom Designed Bar Cabinet built to owners request',
     woodType: 'Juglans nigra (Black Walnut)',
@@ -332,7 +332,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 17,
+    id: 18,
     title: 'Black Walnut Shelves',
     desc: 'Floating, Hidden Hardware, Shelves',
     woodType: 'Juglans nigra (Black Walnut)',
@@ -349,7 +349,7 @@ export const projectItems: Project[] = [
     category: 'Shelves',
   },
   {
-    id: 18,
+    id: 19,
     title: 'Entertainment Stands',
     desc: 'Floating, Hidden Hardware, Shelf',
     woodType: 'Red Oak Veneer Plywood',
@@ -366,7 +366,7 @@ export const projectItems: Project[] = [
     category: 'Shelves',
   },
   {
-    id: 19,
+    id: 20,
     title: 'Poplar Bowl',
     desc: 'Poplar Turned Serving Bowl',
     woodType: 'Liriodendron tulipifera (Poplar)',
@@ -384,7 +384,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 20,
+    id: 21,
     title: 'Live-Edge Desk',
     desc: 'Live-Edge Red Oak Office Desk',
     woodType: 'Quercus rubra (Red Oak)',
@@ -401,7 +401,7 @@ export const projectItems: Project[] = [
     category: 'Tables',
   },
   {
-    id: 21,
+    id: 22,
     title: 'Walnut w/inlay Cutting Board',
     desc: 'Highly figured decorative Cutting Board',
     woodType: 'Juglans regia (English Walnut)',
@@ -421,7 +421,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 22,
+    id: 23,
     title: 'Epoxy River Desk',
     desc: 'Epoxy River flowing between a Live-Edge Walnut halved slab',
     woodType: 'Juglans regia (English Walnut)',
@@ -438,7 +438,7 @@ export const projectItems: Project[] = [
     category: 'Tables',
   },
   {
-    id: 23,
+    id: 24,
     title: '“Lightning Strike”',
     desc: 'Wall Mounted Poplar Shelves made from owner’s fallen tree\n' + 'struck by Lightning',
     woodType: 'Liriodendron tulipifera (Poplar)',
@@ -455,7 +455,7 @@ export const projectItems: Project[] = [
     category: 'Shelves',
   },
   {
-    id: 24,
+    id: 25,
     title: 'Engraved Jewelry Box',
     desc: 'Custom Design Engraved Jewelry Box',
     woodType: 'Pinus strobus (Eastern White Pine)',
@@ -476,7 +476,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 25,
+    id: 26,
     title: 'Poplar Bowl',
     desc: 'Poplar Turned Utility Bowl',
     woodType: 'Liriodendron tulipifera (Poplar)',
@@ -493,7 +493,7 @@ export const projectItems: Project[] = [
     category: 'Other',
   },
   {
-    id: 26,
+    id: 27,
     title: 'Fossilized Mammoth Tooth Ring',
     desc: 'Custom Made Inlaied Rings',
     woodType: 'Not Limited to. Inquire for more information.',
