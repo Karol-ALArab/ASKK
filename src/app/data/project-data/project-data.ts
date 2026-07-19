@@ -4,19 +4,39 @@ import { Project } from '../interface/project';
 export const projectItems: Project[] = [
   {
     id: 1,
-    title: 'Table Base',
-    desc: 'Intersecting white oak table base',
-    woodType: 'White Oak',
-    longDesc: 'This is a table base made from white oak. Glass top by other',
+    title: '“X” Table Base',
+    desc: 'Intersecting Solid Hardwood table base',
+    woodType: 'Quercus alba (White Oak)',
+    longDesc:
+      'Most common in North America. Widely used for cabinetry,\n' +
+      'flooring, furniture, and architectural millwork. Known for its\n' +
+      'strength, durability, and prominent straight grain.' +
+      'FINISH: Protective Hard-wax-formula finish .\n' +
+      '\n' +
+      'Applied to wood surfaces to enhance natural appearance while\n' +
+      'providing resistance to wear, moisture, stains, and everyday\n' +
+      'use.',
     imgLink: '/../../assets/tables/Resized_tempFileForShare_20221222-100931_468538686716525.jpeg',
     category: 'Tables',
   },
   {
     id: 3,
-    title: 'Custom Wooden Mugs',
-    desc: 'This is a set of custom walnut food-safe mugs',
-    woodType: 'Walnut',
-    longDesc: 'These wooden food-safe mugs can hold up to 1000ml. Handle designs are mug specific.',
+    title: 'Custom Set of Wooden Tankards',
+    desc: 'Set of Medieval Inspired Tankards with custom handles',
+    woodType: 'Juglans regia (English Walnut)',
+    longDesc:
+      'Most common worldwide. Widely used for fine furniture,\n' +
+      'cabinetry, veneers, and luxury architectural millwork. Valued for\n' +
+      'its rich brown color, smooth grain, and elegant appearance.\n' +
+      'FINISH: Protective Food-Safe Wax (Ext.) &amp; Epoxy (Int.) Finish\n' +
+      'Wax: Applied to wood surfaces to enhance the natural\n' +
+      'appearance while providing a food-safe protective barrier\n' +
+      'against moisture, stains, and everyday use. Maintains a natural\n' +
+      'feel and can be easily renewed through periodic reapplication.\n' +
+      'Epoxy: Applied to wood surfaces to create a durable, non-\n' +
+      'porous protective coating while providing exceptional\n' +
+      'resistance to moisture, stains, abrasion, chemicals, and\n' +
+      'everyday use. Suitable for direct food contact when fully cured.',
     imgLink: '/../../assets/mugs/IMG_2657.JPEG',
     category: 'Mugs',
   },
@@ -30,7 +50,17 @@ export const projectItems: Project[] = [
   {
     id: 6,
     title: 'Spalted Maple Coasters',
-    desc: 'This is a table',
+    desc: 'Highly figured decorative wood coasters',
+    longDesc: 'Commonly sourced from Black Poplar. Prized for its dramatic\n'+
+      'swirling burl figure and natural variation. Frequently used as a\n'+
+      'decorative veneer for luxury furniture, cabinetry, and\n'+
+      'architectural millwork.\n'+
+      '\n'+
+      'FINISH: Protective Hard-wax-formula finish\n'+
+      '\n'+
+      'Applied to wood surfaces to enhance natural appearance while\n'+
+      'providing resistance to wear, moisture, stains, and everyday\n'+
+      'use.',
     imgLink: '/../../assets/coasters/CEA20BDA-C451-4E57-A568-EEDF8330E689.jpg',
     category: 'Coasters',
   },
