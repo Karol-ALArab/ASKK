@@ -4,19 +4,27 @@
 ================================================== */
 
 .services-page {
-  background-image:
-    radial-gradient(
-      closest-corner,
-      rgba(29, 27, 16, 0.90) 0%,
-      rgba(29, 27, 16, 0.95) 50%,
-      rgb(29, 27, 16) 80%
-    ),
-    url("../../assets/PhotoshootPics/partOne/PXL_20260712_012643906.jpg");
-  position: relative;
+  /*background-image:*/
+  /*  radial-gradient(*/
+  /*    closest-corner,*/
+  /*    rgba(29, 27, 16, 0.90) 0%,*/
+  /*    rgba(29, 27, 16, 0.95) 50%,*/
+  /*    rgb(29, 27, 16) 80%*/
+  /*  ),*/
+  /*  url("../../assets/PhotoshootPics/partOne/PXL_20260712_012643906.jpg");*/
+  /*position: relative;*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.87) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 70%),
+  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011815081.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  /*filter: blur(6px);*/
+  z-index:3;
 
 }
 

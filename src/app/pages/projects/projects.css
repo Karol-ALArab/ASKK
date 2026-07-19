@@ -86,10 +86,10 @@ mat-divider {
 
 
 mat-card.glass-project-card {
-  background-color: rgba(38, 35, 20, 0.8) !important;
-  border: 1px solid #3a3420 !important;
-  border-radius: 1px !important;
-  padding: 0 !important;
+  background-color: rgba(38, 35, 20, 0.8);
+  border: 1px solid #3a3420;
+  border-radius: 1px;
+  padding: 0 ;
   overflow: hidden;
   display: flex;
   flex-direction: column;
