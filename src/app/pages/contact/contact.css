@@ -142,3 +142,18 @@ select {
 
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 100px;
+
+  font-weight: 700;
+  font-size: 22px;
+  color: #f1ddb0;
+}
+
+.logo img {
+  width: 100px;
+}

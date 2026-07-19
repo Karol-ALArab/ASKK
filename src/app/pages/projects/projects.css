@@ -94,16 +94,7 @@ mat-card.glass-project-card {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
 }
-
-
-/*.glass-project-card:hover {*/
-/*  transform: translateY(-5px);*/
-/*  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);*/
-/*}*/
-
-
 .card-image-box {
   position: relative;
   width: 100%;
@@ -129,8 +120,8 @@ mat-chip.category-pill {
 }
 
 mat-chip.category-pill ::ng-deep .mdc-evolution-chip__text-label {
-  color:#cba43d; !important;
-  font-weight: 300 !important;
+  color:#cba43d;
+  font-weight: 300;
 
 }
 
