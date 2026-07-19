@@ -1,33 +1,248 @@
-.project-card {
-  max-width: 600px;
-  padding: 1rem;
-  cursor: pointer;
-  font-family: font1, sans-serif;
-}
-
-.project-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+.projects{
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 20%, rgba(29, 27, 16, 0.95) 45%, rgb(29, 27, 16) 65%),
+  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011815081.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
 }
 
-.container {
+.projects-view {
+  color: #f1f1f1;
+  font-family: font1, sans-serif;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+/*Header Section*/
+
+.projects-header {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem;
-  gap: 5rem;
-  font-family: font1, sans-serif;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+
+
+.projects-header h1 {
+  font-family:"Cormorant Garamond",serif;
+  font-size:72px;
+  margin-bottom:25px;
+  color:#f5e7c8;
+  font-weight: 300;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  background: rgba(30, 30, 25, 0.6);
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #aaaaaa;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #dfcdb4;
+}
+
+.filter-btn.active {
+  background: rgba(139, 107, 74, 0.4);
+  color: #dfcdb4;
+}
+
+.center-logo {
+  height: 80px;
+  opacity: 0.8;
+}
+
+/*Material Divider Styling*/
+mat-divider {
+  border-color: rgba(198,164,108,.25);
+  padding-bottom: 50px;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+
+mat-card.glass-project-card {
+  background-color: rgba(38, 35, 20, 0.8);
+  border: 1px solid #3a3420;
+  border-radius: 1px;
+  padding: 0 ;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card-image-box {
+  position: relative;
+  width: 100%;
+  height: 330px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+mat-chip.category-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 15, 15, 0.85);
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  z-index: 2;
 
 }
 
-h1{
+mat-chip.category-pill ::ng-deep .mdc-evolution-chip__text-label {
+  color:#cba43d;
+  font-weight: 300;
+
+}
+
+.card-content-box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  margin: 0 0 4px 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  color: #f5e7c8;
+}
+
+.project-desc {
+  color:#8f8361;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.view-details-btn {
+  margin-top: auto;
   text-align: center;
-  font-family: font1, sans-serif;
-
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
 }
 
-section {
-  font-family: font1, sans-serif;
+.glass-project-card:hover .view-details-btn {
+  color: #dfcdb4;
 }
 
+
+button{
+  padding:15px 35px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  transition:.3s;
+
+  border-radius: 100px;
+}
+
+
+filter-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .projects-view {
+    padding: 30px 15px;
+  }
+
+
+  .projects-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .header-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .projects-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+  }
+
+
+  .filter-bar-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 0;
+  }
+
+  .filter-bar-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-bar {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+  button {
+    padding: 12px 24px;
+  }
+
+
+  .card-image-box {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .filter-bar {
+    width: 100%;
+    justify-content: center;
+  }
+}

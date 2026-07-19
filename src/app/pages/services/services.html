@@ -1,37 +1,22 @@
-<!--<section appFadeIn>-->
-<!--  <h1>SERVICES</h1>-->
-<!--  <mat-divider></mat-divider>-->
-<!--</section>-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | JM Woodworking</title>
 
-  <link rel="stylesheet" href="services.css">
+<section class="services-page" appFadeIn>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<header>
+<section class="header">
 
 
-    <div class="logo">
-      <img src="JM_LOGO_ICON.png" alt="">
+  <div class="logo">
+    <img src="JM_LOGO_ICON.png" alt="">
 
-    </div>
-
-
-</header>
+  </div>
 
 
-<section class="hero">
+</section>
+
+
+<section class="hero" appFadeIn>
 
   <p class="section-title">
-    WHAT WE BUILD
+    WHAT I BUILD
   </p>
 
   <h1>Services</h1>
@@ -46,7 +31,7 @@
 
 <!-- CARD 1 -->
 
-<section class="service-card">
+<section class="service-card" appFadeIn appHoverAnim>
 
   <div class="service-image">
     <img src="assets/images/table.jpg" alt="">
@@ -57,12 +42,12 @@
     <span>CUSTOM FURNITURE</span>
 
     <h2>
-      Tables, chairs, benches, desks —
+      Tables, benches, desks
       built to your dimensions.
     </h2>
 
     <p>
-      The core of the practice. Every custom furniture commission begins with a site visit or a detailed conversation about the room, the use, and the people who will inhabit it. We design together, then Joshua builds alone.
+      The core of the practice. Every custom furniture commission begins with a site visit or a detailed conversation about the room, the use, and the people who will inhabit it.
     </p>
 
     <ul>
@@ -70,7 +55,6 @@
       <li>Dining & kitchen tables</li>
       <li>Writing & studio desks</li>
       <li>Benches & entry pieces</li>
-      <li>Chairs & seating</li>
       <li>Bed frames & headboards</li>
 
     </ul>
@@ -79,15 +63,16 @@
 
       <div>
 
-        <h3>Starting at $1,800</h3>
 
-        <small>6–14 month lead time</small>
+
+        <small>*6–14 month lead time</small>
 
       </div>
 
-      <a routerLink="/contact" class="button">
+      <a href="#contact" class="button">
         INQUIRE →
       </a>
+
 
     </div>
 
@@ -99,26 +84,24 @@
 
 <!-- CARD 2 -->
 
-<section class="service-card reverse">
+<section class="service-card reverse" appFadeIn appHoverAnim>
 
   <div class="service-content">
 
     <span>TURNED WOOD</span>
 
     <h2>
-      Mugs, bowls and vessels —
-      shaped on the lathe by hand.
+      Mugs, bowls and vessels
     </h2>
 
     <p>
-      Lathe-turned pieces are the fastest path to a Harlow original. Mugs, bowls, and small vessels are made in short batches from offcuts and figured wood that would otherwise go to waste.
+      Made in batches from figured wood.
     </p>
 
     <ul>
 
-      <li>Oak & Walnut mugs</li>
+      <li>Cherry Oak mugs</li>
       <li>Serving bowls</li>
-      <li>Fruit & salad bowls</li>
       <li>Small vessels & vases</li>
       <li>Custom matched sets</li>
 
@@ -128,13 +111,12 @@
 
       <div>
 
-        <h3>Starting at $65 per piece</h3>
 
-        <small>2–6 week lead time</small>
+        <small>*2–6 week lead time</small>
 
       </div>
 
-      <a routerLink="/contact" class="button">
+      <a href="#contact" class="button">
         INQUIRE →
       </a>
 
@@ -152,7 +134,7 @@
 
 <!-- CARD 3 -->
 
-<section class="service-card">
+<section class="service-card" appFadeIn appHoverAnim>
 
   <div class="service-image">
     <img src="assets/images/shelf.JPEG" alt="">
@@ -173,11 +155,12 @@
 
     <ul>
 
+      <li>Kitchen cabinets</li>
       <li>Floating wall shelves</li>
-      <li>Coat & key racks</li>
       <li>Round & square coasters</li>
       <li>Cutting boards</li>
       <li>Serving platters</li>
+
 
     </ul>
 
@@ -185,13 +168,11 @@
 
       <div>
 
-        <h3>Starting at $120</h3>
-
-        <small>3–8 week lead time</small>
+        <small>*3–8 week lead time</small>
 
       </div>
 
-      <a routerLink="/contact" class="button">
+      <a href="#contact" class="button">
         INQUIRE →
       </a>
 
@@ -257,7 +238,7 @@
 
 
 
-<section class="process">
+<section class="process" appFadeIn>
 
   <small>THE PROCESS</small>
 
@@ -267,37 +248,37 @@
 
   <div class="steps">
 
-    <div class="step">
+    <div class="step" appHoverAnim appFadeIn>
       <h3>1</h3>
       <h4>Inquiry</h4>
       <p>Fill out the contact form with your idea and timeline.</p>
     </div>
 
-    <div class="step">
+    <div class="step" appHoverAnim appFadeIn>
       <h3>2</h3>
       <h4>Consultation</h4>
       <p>30 minute call or studio visit to discuss your project.</p>
     </div>
 
-    <div class="step">
+    <div class="step" appHoverAnim appFadeIn>
       <h3>3</h3>
       <h4>Proposal</h4>
       <p>Receive a written quote, timeline and material plan.</p>
     </div>
 
-    <div class="step">
+    <div class="step" appHoverAnim appFadeIn>
       <h3>4</h3>
       <h4>Deposit</h4>
       <p>50% deposit secures your spot in the build queue.</p>
     </div>
 
-    <div class="step">
+    <div class="step" appHoverAnim appFadeIn>
       <h3>5</h3>
       <h4>Build</h4>
       <p>Josh builds your piece with photo updates along the way.</p>
     </div>
 
-    <div class="step">
+    <div class="step" appHoverAnim appFadeIn>
       <h3>6</h3>
       <h4>Delivery</h4>
       <p>White-glove delivery and installation included.</p>
@@ -309,7 +290,7 @@
 
 
 
-<section class="cta">
+<section class="cta" appFadeIn>
 
   <div>
 
@@ -317,18 +298,18 @@
       Ready to start a project?
     </h2>
 
-    <p>
-      Eight commissions per year. Inquire early.
-    </p>
+<!--    <p>-->
+<!--      Eight commissions per year. Inquire early.-->
+<!--    </p>-->
 
   </div>
 
-  <a routerLink="/contact" class="button">
+  <a href="#contact" class="button">
     GET IN TOUCH →
   </a>
 
 </section>
 
 
-</body>
-</html>
+</section>
+

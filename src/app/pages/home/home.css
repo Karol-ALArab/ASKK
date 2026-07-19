@@ -1,3 +1,406 @@
 section {
   font-family: font1, sans-serif;
 }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 140dvh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20dvh;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.87) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 70%),
+  url("../../assets/PhotoshootPics/partOne/PXL_20260712_011547931.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: blur(6px);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 275px;
+  height: 250px;
+}
+
+.logoImg {
+  object-fit: contain;
+}
+
+.title{
+  font-family:"Cormorant Garamond",serif;
+  letter-spacing: 3px;
+  color:#cba43d;
+  font-size: 50px;
+}
+
+.slogan{
+  font-family:'Inter',sans-serif;
+  color:#f5e7c8;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 300;
+
+}
+
+.featured{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.section-header{
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.section-title{
+  font-weight: 300;
+}
+
+div.featured {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-bottom: 100px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.featured-card {
+  background: rgba(29, 27, 16, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 235, 205, 0.2);
+  border-radius: 16px;
+
+  padding: 16px;
+  width: 340px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.featured-card .card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.featured-card .card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-card .card-label-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(29, 27, 16, 0.85);
+  color:#cba43d;
+  font-family:"Cormorant Garamond",serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 10px;
+
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+.featured-card .card-image-wrapper:hover .card-label-overlay {
+  opacity: 1;
+}
+
+.wood-footer-section {
+  background-color: #13120b;
+  padding: 80px 20px 20px 20px;
+  color: #f1f1f1;
+  font-family: font1, sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bio-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.bio-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  color: #dfcdb4;
+}
+.bio-text p:last-child{
+
+  font-weight: 300;
+  line-height: 1.6;
+  color:#8f8361;
+  font-size:18px;
+  max-width: 600px;
+}
+.bio-text strong {
+  font-family:"Cormorant Garamond",serif;
+  font-size: 24px;
+  color:#cba43d;
+  font-weight: 800;
+}
+
+.footer-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.footer-card {
+  background: #262314;
+  border:1px solid #3a3420;
+  border-radius: 1px;
+  padding: 24px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-interior-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+}
+
+
+.large-logo {
+  width: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.img-box {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gold-divider {
+  width: 80%;
+  border: 0;
+  border-top: 1px solid rgba(223, 205, 180, 0.3);
+  margin: 15px 0;
+}
+
+.card-top-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #dfcdb4;
+  margin: 0;
+}
+
+.tight-margins {
+  margin-top: 10px;
+}
+
+.contact-subtext {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  margin-top: 5px;
+}
+
+.card-link-text {
+  background:#d8b442;
+  color:#18160d;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  font-family: font1, sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+}
+
+
+.section-title{
+  color:#caa53f;
+  letter-spacing:4px;
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+/*Material Divider Styling*/
+mat-divider.featured {
+  border-color: rgba(198,164,108,.25);
+  padding-bottom: 25px;
+  width: 300px;
+}
+
+.page-break{
+  border-color: rgba(198,164,108,.25);
+  width: 100%;
+}
+
+.reviews-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.reviews-section-title {
+  /*font-family: "Cormorant Garamond", serif;*/
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #dfcdb4;
+  margin-bottom: 10px;
+}
+
+.reviews-divider {
+  border-color: rgba(198, 164, 108, 0.25);
+  width: 150px;
+}
+
+.reviews-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.review-card {
+  background: #262314;
+  border: 1px solid #3a3420;
+  border-radius: 1px;
+  padding: 30px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.review-interior-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.stars {
+  color: #cba43d;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #dfcdb4;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+.reviewer-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #caa53f;
+  margin: 0 0 5px 0;
+}
+
+.reviewed-product {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #8f8361;
+  text-transform: uppercase;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .bio-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  div.featured{
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-cards-row {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-row {
+    grid-template-columns: 1fr;
+  }
+}
