@@ -16,7 +16,8 @@
 }
 /*Main Section*/
 .about-container {
-  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 0%, rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 80%),
+  background-image: radial-gradient(closest-corner, rgba(29, 27, 16, 0.90) 0%,
+          rgba(29, 27, 16, 0.95) 50%, rgb(29, 27, 16) 80%),
   url('../../assets/PhotoshootPics/partOne/PXL_20260712_012643906.jpg');
   background-attachment: fixed;
   position: relative;
@@ -24,7 +25,8 @@
   background-position:center;
   padding:70px 8%;
   color:white;
-  height: 100dvh;
+  min-height: 100dvh;
+  height: auto;
 }
 /* Header*/
 .section-header {
@@ -35,7 +37,6 @@
 
 /*Section Heading*/
 .section-title {
-  /*font-family: 'Cormorant Garamond', serif;*/
   color:#caa53f;
   letter-spacing:4px;
   font-size:25px;
@@ -152,16 +153,29 @@ mat-divider {
   border-color: rgba(198,164,108,.25);
 }
 
-
 /*Tablet Layout*/
-@media(max-width:992px){
-  .content-grid {
-    grid-template-columns:1fr;
+@media (max-width: 992px) {
+
+  .about-container{
+    height: auto;
+    min-height: 100dvh;
+    padding: 80px 8%;
   }
-  .about-title {
-    font-size:48px;
+
+  .content-grid{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-card{
+    min-height: auto;
+  }
+
+  .stats-card{
+    min-height: 500px;
   }
 }
+
 
 /* Mobile Layout*/
 @media(max-width:600px){

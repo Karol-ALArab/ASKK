@@ -17,7 +17,7 @@
 
 
 }
-
+/*Header Section*/
 
 .projects-header {
   display: flex;
@@ -28,13 +28,13 @@
 
 
 
-/*.projects-header h1 {*/
-/*  font-family:"Cormorant Garamond",serif;*/
-/*  font-size:72px;*/
-/*  margin-bottom:25px;*/
-/*  color:#f5e7c8;*/
-/*  font-weight: 300;*/
-/*}*/
+.projects-header h1 {
+  font-family:"Cormorant Garamond",serif;
+  font-size:72px;
+  margin-bottom:25px;
+  color:#f5e7c8;
+  font-weight: 300;
+}
 
 .filter-bar {
   display: flex;
@@ -86,24 +86,15 @@ mat-divider {
 
 
 mat-card.glass-project-card {
-  background-color: rgba(38, 35, 20, 0.8) !important;
-  border: 1px solid #3a3420 !important;
-  border-radius: 1px !important;
-  padding: 0 !important;
+  background-color: rgba(38, 35, 20, 0.8);
+  border: 1px solid #3a3420;
+  border-radius: 1px;
+  padding: 0 ;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
 }
-
-
-/*.glass-project-card:hover {*/
-/*  transform: translateY(-5px);*/
-/*  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);*/
-/*}*/
-
-
 .card-image-box {
   position: relative;
   width: 100%;
@@ -129,8 +120,8 @@ mat-chip.category-pill {
 }
 
 mat-chip.category-pill ::ng-deep .mdc-evolution-chip__text-label {
-  color:#cba43d; !important;
-  font-weight: 300 !important;
+  color:#cba43d;
+  font-weight: 300;
 
 }
 
