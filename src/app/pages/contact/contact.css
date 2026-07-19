@@ -1,5 +1,12 @@
+
+/*Fonts*/
+@import url(
+'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap'
+);
+
 :host {
   display: block;
+  font-family: "Inter", sans-serif;
 }
 
 .commission-wrapper {
@@ -29,12 +36,14 @@
 }
 
 .title {
-  text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.08em;
-  color: #e8b565;
   text-transform: uppercase;
   margin: 0 0 16px;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-weight: 600;
+  color: #f5e7c8;
 }
 
 .title-divider {
@@ -48,19 +57,24 @@
 
 label {
   display: block;
-  color: #e8b565;
-  margin-bottom: 8px;
-  font-size: 0.95rem;
+  font-family: "Inter", sans-serif;
+  color: #caa53f;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 input,
 textarea {
+  font-family: "Inter", sans-serif;
   width: 100%;
   box-sizing: border-box;
   background: #0d0b0a;
   border: 1px solid #e8b565;
   border-radius: 10px;
-  color: #f0d9a8;
+  color: #f5e7c8;
   padding: 12px 16px;
   font-size: 1rem;
   outline: none;
@@ -95,6 +109,7 @@ button[type='submit'] {
   border-radius: 999px;
   background: #f0c778;
   color: #1a1512;
+  font-family: "Inter", sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
@@ -102,7 +117,7 @@ button[type='submit'] {
 }
 
 button[type='submit']:hover:not(:disabled) {
-  background: #f5d491;
+  background:  #f3cb58;
 }
 
 button[type='submit']:disabled {
@@ -111,6 +126,8 @@ button[type='submit']:disabled {
 }
 
 .status {
+  font-family: "Inter", sans-serif;
+  color: #8f8361;
   text-align: center;
   margin-top: 16px;
   font-size: 0.9rem;
@@ -125,12 +142,13 @@ button[type='submit']:disabled {
 }
 
 select {
+  font-family: "Inter", sans-serif;
   width: 100%;
   box-sizing: border-box;
   background: #0d0b0a;
   border: 1px solid #e8b565;
   border-radius: 10px;
-  color: #f0d9a8;
+  color: #f5e7c8;
   padding: 12px 16px;
   font-size: 1rem;
   outline: none;
