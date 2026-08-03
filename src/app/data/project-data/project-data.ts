@@ -16,7 +16,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/tables/Resized_tempFileForShare_20221222-100931_468538686716525.jpeg',
+    imgLink: 'assets/tables/Resized_tempFileForShare_20221222-100931_468538686716525.jpeg',
     category: 'Tables',
   },
   {
@@ -38,7 +38,7 @@ export const projectItems: Project[] = [
       'porous protective coating while providing exceptional\n' +
       'resistance to moisture, stains, abrasion, chemicals, and\n' +
       'everyday use. Suitable for direct food contact when fully cured.',
-    imgLink: '/../../assets/mugs/IMG_2657.JPEG',
+    imgLink: 'assets/mugs/IMG_2657.JPEG',
     category: 'Mugs',
   },
   {
@@ -56,7 +56,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/coasters/7303E14A-4096-4EAF-8D2A-A0D1B47B5C07.jpg',
+    imgLink: 'assets/coasters/7303E14A-4096-4EAF-8D2A-A0D1B47B5C07.jpg',
     category: 'Coasters',
   },
   {
@@ -73,7 +73,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/coasters/CEA20BDA-C451-4E57-A568-EEDF8330E689.jpg',
+    imgLink: 'assets/coasters/CEA20BDA-C451-4E57-A568-EEDF8330E689.jpg',
     category: 'Coasters',
   },
   {
@@ -90,7 +90,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/PhotoshootPics/partOne/PXL_20260712_012133566.jpg',
+    imgLink: 'assets/PhotoshootPics/partOne/PXL_20260712_012133566.jpg',
     category: 'Coasters',
   },
   {
@@ -109,7 +109,7 @@ export const projectItems: Project[] = [
       'Applied to pressure-treated wood surfaces to enhance\n' +
       'durability while providing additional resistance to moisture, UV\n' +
       'exposure, weathering, and everyday outdoor use.',
-    imgLink: '/../../assets/deck/IMG_6490.JPEG',
+    imgLink: 'assets/deck/IMG_6490.JPEG',
     category: 'Decks',
   },
   {
@@ -126,7 +126,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/images/shelf.JPEG',
+    imgLink: 'assets/images/shelf.JPEG',
     category: 'Shelves',
   },
   {
@@ -143,7 +143,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/images/table.jpg',
+    imgLink: 'assets/images/table.jpg',
     category: 'Tables',
   },
   {
@@ -164,7 +164,7 @@ export const projectItems: Project[] = [
       'Most common in North America. Widely used for painted or\n' +
       'stained millwork, cabinetry, furniture, trim, and mouldings.\n' +
       'Valued for its workability and smooth finish.',
-    imgLink: '/../../assets/other/F25F63E6-B0DB-437B-90BD-19433DEFF6CD.jpg',
+    imgLink: 'assets/other/F25F63E6-B0DB-437B-90BD-19433DEFF6CD.jpg',
     category: 'Shelves',
   },
   {
@@ -192,7 +192,7 @@ export const projectItems: Project[] = [
       'and moisture-regulating properties. Provides an ideal interior\n' +
       'surface for cigar storage while allowing the wood to age\n' +
       'naturally and contribute to optimal humidor performance.',
-    imgLink: '/../../assets/PhotoshootPics/partOne/PXL_20260712_010212047.jpg',
+    imgLink: 'assets/PhotoshootPics/partOne/PXL_20260712_010212047.jpg',
     category: 'Other',
   },
   {
@@ -220,7 +220,7 @@ export const projectItems: Project[] = [
       'and moisture-regulating properties. Provides an ideal interior\n' +
       'surface for cigar storage while allowing the wood to age\n' +
       'naturally and contribute to optimal humidor performance.',
-    imgLink: '/../../assets/PhotoshootPics/partOne/PXL_20260712_005555275.jpg',
+    imgLink: 'assets/PhotoshootPics/partOne/PXL_20260712_005555275.jpg',
     category: 'Other',
   },
   {
@@ -235,7 +235,7 @@ export const projectItems: Project[] = [
       'coating. Enhances the natural grain and color while\n' +
       'providing exceptional resistance to moisture,\n' +
       'scratches, oils, and everyday handling.',
-    imgLink: '/../../assets/PhotoshootPics/partOne/PXL_20260712_012534839.jpg',
+    imgLink: 'assets/PhotoshootPics/partOne/PXL_20260712_012534839.jpg',
     category: 'Other',
   },
   {
@@ -251,7 +251,7 @@ export const projectItems: Project[] = [
       'features, lighting, and artistic applications. Valued for\n' +
       'its rich color, light transmission, and handcrafted\n' +
       'character.',
-    imgLink: '/../../assets/other/IMG_7531_jpg.jpg',
+    imgLink: 'assets/other/IMG_7531_jpg.jpg',
     category: 'Other',
   },
   {
@@ -272,7 +272,7 @@ export const projectItems: Project[] = [
       'Wax Topcoat: Applied to wood surfaces to enhance natural\n' +
       'appearance while providing resistance to wear, moisture, stains,\n' +
       'and everyday use.',
-    imgLink: '/../../assets/other/IMG_7824.JPEG',
+    imgLink: 'assets/other/IMG_7824.JPEG',
     category: 'Other',
   },
 
@@ -290,7 +290,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/PhotoshootPics/partOne/PXL_20260712_010605800.jpg',
+    imgLink: 'assets/PhotoshootPics/partOne/PXL_20260712_010605800.jpg',
     category: 'Tables',
   },
   {
@@ -311,7 +311,7 @@ export const projectItems: Project[] = [
       'b. Wax Topcoat: Applied to wood surfaces to enhance natural\n' +
       'appearance while providing resistance to wear, moisture, stains,\n' +
       'and everyday use.',
-    imgLink: '/../../assets/shelves/IMG_2870.JPG',
+    imgLink: 'assets/shelves/IMG_2870.JPG',
     category: 'Shelves',
   },
   {
@@ -328,7 +328,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/shelves/IMG_3134.JPEG',
+    imgLink: 'assets/shelves/IMG_3134.JPEG',
     category: 'Other',
   },
   {
@@ -345,7 +345,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/shelves/IMG_3137.JPG',
+    imgLink: 'assets/shelves/IMG_3137.JPG',
     category: 'Shelves',
   },
   {
@@ -362,7 +362,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/shelves/IMG_8345.JPG',
+    imgLink: 'assets/shelves/IMG_8345.JPG',
     category: 'Shelves',
   },
   {
@@ -380,7 +380,7 @@ export const projectItems: Project[] = [
       'while providing a food-safe protective barrier against moisture,\n' +
       'stains, and everyday use. Maintains a natural feel and can be\n' +
       'easily renewed through periodic reapplication.',
-    imgLink: '/../../assets/PhotoshootPics/partOne/PXL_20260712_012758300.jpg',
+    imgLink: 'assets/PhotoshootPics/partOne/PXL_20260712_012758300.jpg',
     category: 'Other',
   },
   {
@@ -397,7 +397,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/tables/IMG_0770.JPEG',
+    imgLink: 'assets/tables/IMG_0770.JPEG',
     category: 'Tables',
   },
   {
@@ -417,7 +417,7 @@ export const projectItems: Project[] = [
       'easily renewed through periodic reapplication.\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/tables/IMG_1536.JPEG',
+    imgLink: 'assets/tables/IMG_1536.JPEG',
     category: 'Other',
   },
   {
@@ -434,7 +434,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/tables/IMG_8370.JPG',
+    imgLink: 'assets/tables/IMG_8370.JPG',
     category: 'Tables',
   },
   {
@@ -451,7 +451,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/PhotoshootPics/partTwo/IMG_20260713_135601282).jpg',
+    imgLink: 'assets/PhotoshootPics/partTwo/IMG_20260713_135601282.jpg',
     category: 'Shelves',
   },
   {
@@ -472,7 +472,7 @@ export const projectItems: Project[] = [
       'b. Wax Topcoat: Applied to wood surfaces to enhance natural\n' +
       'appearance while providing resistance to wear, moisture, stains,\n' +
       'and everyday use.',
-    imgLink: '/../../assets/PhotoshootPics/partTwo/IMG_20260713_135551_(3).jpg',
+    imgLink: 'assets/PhotoshootPics/partTwo/IMG_20260713_135551_(3).jpg',
     category: 'Other',
   },
   {
@@ -489,7 +489,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: '/../../assets/PhotoshootPics/partTwo/IMG_20260713_135551_(8).jpg',
+    imgLink: 'assets/PhotoshootPics/partTwo/IMG_20260713_135551_(8).jpg',
     category: 'Other',
   },
   {
@@ -504,7 +504,8 @@ export const projectItems: Project[] = [
       'coating. Enhances the natural grain and color while\n' +
       'providing exceptional resistance to moisture,\n' +
       'scratches, oils, and everyday handling.',
-    imgLink: '/../../assets/PhotoshootPics/partTwo/IMG_20260713_135549_(1).jpg',
+    imgLink: 'assets/PhotoshootPics/partTwo/IMG_20260713_135549_(1).jpg',
     category: 'Other',
   },
 ];
+
