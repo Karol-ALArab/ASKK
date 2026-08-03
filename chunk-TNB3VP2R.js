@@ -145,7 +145,7 @@ struck by Lightning`,woodType:"Liriodendron tulipifera (Poplar)",woodDesc:`Most 
 stained millwork, cabinetry, furniture, trim, and mouldings.
 Valued for its workability and smooth finish.`,finishType:"Protective Hard-wax-formula",finishDesc:`Applied to wood surfaces to enhance natural appearance while
 providing resistance to wear, moisture, stains, and everyday
-use.`,imgLink:"assets/PhotoshootPics/partTwo/IMG_20260713_135601282.jpg",category:"Shelves"},{id:25,title:"Engraved Jewelry Box",desc:"Custom Design Engraved Jewelry Box",woodType:"Pinus strobus (Eastern White Pine)",woodDesc:`Most common in North America. Widely used for furniture, trim,
+use.`,imgLink:"assets/PhotoshootPics/partTwo/IMG_20260713_135601282).jpg",category:"Shelves"},{id:25,title:"Engraved Jewelry Box",desc:"Custom Design Engraved Jewelry Box",woodType:"Pinus strobus (Eastern White Pine)",woodDesc:`Most common in North America. Widely used for furniture, trim,
 panelling, cabinetry, and general millwork. Known for its
 lightweight properties and ease of machining.`,finishType:"General Finishes Oil Stain w/ Protective Hard-wax-formula",finishDesc:`General: Applied to wood surfaces to enrich the natural grain
 and color while providing a uniform, durable finish. Intended for
