@@ -451,7 +451,7 @@ export const projectItems: Project[] = [
       'Applied to wood surfaces to enhance natural appearance while\n' +
       'providing resistance to wear, moisture, stains, and everyday\n' +
       'use.',
-    imgLink: 'assets/PhotoshootPics/partTwo/IMG_20260713_135601282.jpg',
+    imgLink: 'assets/PhotoshootPics/partTwo/IMG_20260713_135601282).jpg',
     category: 'Shelves',
   },
   {
