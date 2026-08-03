@@ -34,7 +34,7 @@
 
           <mat-card class="featured-card" appHoverAnim [appFadeIn]="'3'">
 
-            <a href="/projects/11">
+            <a routerLink="/projects/11">
             <div class="card-image-wrapper">
               <img src="assets/PhotoshootPics/partOne/PXL_20260712_005618618.jpg" alt="Unable to load image">
 
@@ -48,7 +48,7 @@
 
           <mat-card class="featured-card" appHoverAnim [appFadeIn]="'5'">
 
-            <a href="/projects/5">
+            <a routerLink="/projects/11">
             <div class="card-image-wrapper">
               <img src="assets/PhotoshootPics/partOne/PXL_20260712_012133566.jpg" alt="Unable to load image">
 
@@ -62,7 +62,7 @@
 
           <mat-card class="featured-card" appHoverAnim [appFadeIn]="'7'">
 
-            <a href="/projects/12">
+            <a routerLink="/projects/11">
             <div class="card-image-wrapper">
               <img src="assets/PhotoshootPics/partOne/PXL_20260712_012608059.jpg" alt="Unable to load pho">
 
@@ -111,7 +111,7 @@
               <h3 class="card-top-title">LEARN MORE ABOUT THE CRAFTSMEN </h3>
 
               <hr class="gold-divider">
-              <a mat-button href="#about" class="card-link-text">VIEW ABOUT</a>
+              <a mat-button routerLink="/" fragment="about" class="card-link-text">VIEW ABOUT</a>
             </div>
           </mat-card>
 
@@ -122,7 +122,7 @@
               </div>
               <h3 class="card-top-title">EXPLORE PORTFOLIO</h3>
               <hr class="gold-divider">
-              <a  mat-button href="#projects" class="card-link-text">VIEW PROJECTS</a>
+              <a mat-button routerLink="/" fragment="projects" class="card-link-text">VIEW PROJECTS</a>
             </div>
           </mat-card>
 
@@ -133,7 +133,7 @@
               </div>
               <h3 class="card-top-title tight-margins">COMMISSION YOUR PIECE</h3>
               <hr class="gold-divider">
-              <a  mat-button href="#contact" class="card-link-text">CONTACT</a>
+              <a mat-button routerLink="/" fragment="contact" class="card-link-text">CONTACT</a>
             </div>
           </mat-card>
         </div>
