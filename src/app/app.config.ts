@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
         scrollPositionRestoration: 'enabled',
       }),
       withComponentInputBinding(),
-      withHashLocation()
+
     ),
   ]
 };

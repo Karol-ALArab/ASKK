@@ -9,6 +9,7 @@ import { About } from '../about/about';
 import { Contact } from '../contact/contact';
 import { Projects } from '../projects/projects';
 import { Services } from '../services/services';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,7 @@ import { Services } from '../services/services';
     Projects,
     Services,
     Projects,
+    RouterLink,
   ],
   templateUrl: './home.html',
   styleUrl: './home.css',
