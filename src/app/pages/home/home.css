@@ -57,6 +57,11 @@ section {
   letter-spacing: 3px;
   color:#cba43d;
   font-size: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+    padding: 5px;
+  }
 }
 
 .slogan{
